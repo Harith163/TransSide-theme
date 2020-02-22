@@ -1,0 +1,18 @@
+
+* My emacs theme(s)!!! 
+
+I've found most themes, especially dark themes have always come /close/ to what I've needed but for one reason or the other fallen short of my expectations. I'm working on my own theme(s) that are better. 
+
+* Trans-Side
+
+To use this theme, first clone this repo/copy this theme into a custom theme folder. Then add this line to your init.el file to tell emacs to add that folder to its path. 
+   #+begin_src elisp 
+    (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+   #+end_src
+
+then load the theme by adding this.
+   #+begin_src elisp
+    (load-theme 'trans-side t)
+   #+end_src
+
+Thats it!
