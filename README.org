@@ -3,6 +3,8 @@
 
 I've found most themes, especially dark themes have always come /close/ to what I've needed but for one reason or the other fallen short of my expectations. I'm working on my own theme(s) that are better. 
 
+[[file:screenshot.png][Org mode + my .bashrc]]
+
 * Todo
   - Support for more font faces
   - Using contrast better to demarcate the important from the not.
