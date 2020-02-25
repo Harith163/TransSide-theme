@@ -84,6 +84,6 @@
  '(magit-hash ((((class color) (min-colors 89)) (:foreground "#e4e4e4"))))
  '(lazy-highlight ((((class color) (min-colors 89)) (:foreground "#e4e4e4" :background "#3a3a3a"))))
  '(rainbow-delimiters-unmatched-face ((((class color) (min-colors 89)) :foreground "#ff0000")))
- '(default ((((class color) (min-colors 89)) (:background "#141414" :foreground "#f8f8f8")))))
+ '(default ((((class color) (min-colors 89)) (:background "#080808" :foreground "#f8f8f8")))))
 
 (provide-theme 'trans-side)
