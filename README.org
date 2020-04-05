@@ -9,6 +9,7 @@ I've found most themes, especially dark themes have always come /close/ to what 
   - Support for more font faces
   - Using contrast better to demarcate the important from the not.
   - Need to get a consistent color-scheme language so that similar things use similar colors.
+  - Need to switch over to a better way to deal with themes(autothemer.el)
 
 * Trans-Side
 
