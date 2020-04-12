@@ -3,8 +3,8 @@
 
 (custom-theme-set-faces
  'trans-side
- '(font-lock-builtin-face ((((class color) (min-colors 89)) (:foreground "#a43261"))))
- '(font-lock-comment-face ((((class color) (min-colors 89)) (:foreground "#bbadd0"))))
+ '(font-lock-builtin-face ((((class color) (min-colors 89)) (:foreground "#be2b95"))))
+ '(font-lock-comment-face ((((class color) (min-colors 89)) (:foreground "#37465f"))))
  '(font-lock-negation-char-face ((((class color) (min-colors 89)) (:foreground "#6751a6"))))
  '(font-lock-constant-face ((((class color) (min-colors 89)) (:foreground "#6751a6"))))
  '(font-lock-doc-face ((((class color) (min-colors 89)) (:foreground "#bbadd0"))))
@@ -50,7 +50,7 @@
  '(org-agenda-done ((((class color) (min-colors 89)) (:foreground "#4c4c4c"))))
  '(org-scheduled ((((class color) (min-colors 89)) (:foreground "#ff81b8"))))
  '(org-scheduled-today ((((class color) (min-colors 89)) (:foreground "#913e88" :weight bold :height 1.2))))
- '(org-ellipsis ((((class color) (min-colors 89)) (:foreground "#a43261"))))
+ '(org-ellipsis ((((class color) (min-colors 89)) (:foreground "#be2b95"))))
  '(org-verbatim ((((class color) (min-colors 89)) (:foreground "#bcbcbc"))))
  '(org-document-info-keyword ((((class color) (min-colors 89)) (:foreground "#913e88"))))
  '(font-latex-bold-face ((((class color) (min-colors 89)) (:foreground "#ff81b8"))))
@@ -60,7 +60,7 @@
  '(ivy-current-match ((((class color) (min-colors 89)) (:foreground "#d0d0d0" :inherit highlight :underline t))))
  '(warning ((((class color) (min-colors 89)) (:foreground "#ff0069"))))
  '(ac-completion-face ((((class color) (min-colors 89)) (:underline t :foreground "#00ddf4"))))
- '(undo-tree-visualizer-current-face ((((class color) (min-colors 89)) :foreground "#a43261")))
+ '(undo-tree-visualizer-current-face ((((class color) (min-colors 89)) :foreground "#be2b95")))
  '(undo-tree-visualizer-default-face ((((class color) (min-colors 89)) :foreground "#e4e4e4")))
  '(undo-tree-visualizer-unmodified-face ((((class color) (min-colors 89)) :foreground "#00d3ff")))
  '(undo-tree-visualizer-register-face ((((class color) (min-colors 89)) :foreground "#ff81b8")))
@@ -84,6 +84,7 @@
  '(magit-hash ((((class color) (min-colors 89)) (:foreground "#e4e4e4"))))
  '(lazy-highlight ((((class color) (min-colors 89)) (:foreground "#e4e4e4" :background "#3a3a3a"))))
  '(rainbow-delimiters-unmatched-face ((((class color) (min-colors 89)) :foreground "#ff0000")))
- '(default ((((class color) (min-colors 89)) (:background "#080808" :foreground "#f8f8f8")))))
+ '(default ((((class color) (min-colors 89)) (:background "#080808" :foreground "#f8f8f8"))))
+)
 
 (provide-theme 'trans-side)
