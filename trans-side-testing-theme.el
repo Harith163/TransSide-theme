@@ -39,26 +39,7 @@
 		     
 		     ;; Forms after the face specifications are evaluated.
 		     ;; (palette vars can be used, read below for details.)
-		     (custom-theme-set-variables 'trans-side-testing
-						 `(ansi-color-names-vector [,bg-black
-									    ,bg-dark
-									    ,bg-gray
-									    ,fg-white
-									    ,fg-dark
-									    ,fg-gray
-									    ,pink-dark
-									    ,blue-dark
-									    ,aqua-dark
-									    ,purple-dark
-									    ,magenta-dark
-									    ,blue2-dark
-									    ,pink-light
-									    ,blue-light
-									    ,aqua-light
-									    ,purple-light
-									    ,magenta-light
-									    ,blue2-light])))
-
+		     )
 
 (and load-file-name
      (boundp 'custom-theme-load-path)
