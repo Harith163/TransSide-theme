@@ -45,10 +45,14 @@
 		      (mygray2-dark "#141414")
 
 		      ;;Level Colors
-		      (level1 "#03B8FF")
+		      (level1 "#00EEFF")
 		      (level2 "#e85e8a")
-		      (level3 "#00CAFF")
-		      (level4 "#8A51A6")
+		      (level3 "#00ccff")
+		      (level4 "#C96269")
+		      (level5 "#00FCEE")
+		      (level6 "#8368D5")
+		      (level7 "#00FF75")
+		      (level8 "#6B62E2")
 
 		      ;;Alternate Pallate
 		      (pastel-blue "#7eb8da")
@@ -58,7 +62,7 @@
 		      (pastel-violet "#9579d1")
 				      
 		      ;;Warning, comment, and other miscellanious colors
-		      (builtin "#00a0af")
+		      (builtin "#0068C5")
 		      (comment "#37465f")
 		      (warning "#ff0069"))
 		     
@@ -127,8 +131,15 @@
 		      (org-varbatim (:foreground bg-gray))
 		      (org-document-info-keyword (:foreground magenta-dark))
 
-		      (org-level-1 (:inherit 'outline-1 :weight 'bold :height 1.1))
-
+		      (org-level-1 (:inherit 'outline-1 :weight 'bold :height 1.3 :slant 'italic))
+		      (org-level-2 (:inherit 'outline-2 :weight 'normal :height 1.1 :slant 'italic))
+		      (org-level-3 (:inherit 'outline-3 :weight 'normal))
+		      (org-level-4 (:inherit 'outline-4 :weight 'normal))
+		      (org-level-5 (:inherit 'outline-5 :weight 'normal))
+		      (org-level-6 (:inherit 'outline-6 :weight 'normal))
+		      (org-level-7 (:inherit 'outline-7 :weight 'normal))
+		      (org-level-8 (:inherit 'outline-8 :weight 'normal))
+		      
 		      ;;Rainbow delimiters
 		      (rainbow-delimiters-depth-1-face (:foreground mygray1))
 		      (rainbow-delimiters-depth-2-face (:foreground pink-light))
@@ -145,14 +156,14 @@
 		      (rainbow-delimiters-base-face nil)
 
 		      ;;Outlines/Headings
-		      (outline-1 (:inherit 'font-lock-function-name-face))
-		      (outline-2 (:inherit 'font-lock-variable-name-face))
-		      (outline-3 (:inherit 'font-lock-keyword-face))
-		      (outline-4 (:inherit 'font-lock-comment-face))
-		      (outline-5 (:inherit 'font-lock-type-face))
-		      (outline-6 (:inherit 'font-lock-constant-face))
-		      (outline-7 (:inherit 'font-lock-builtin-face))
-		      (outline-8 (:inherit 'font-lock-string-face))
+		      (outline-1 (:foreground level1))
+		      (outline-2 (:foreground level2))
+		      (outline-3 (:foreground level3))
+		      (outline-4 (:foreground level4))
+		      (outline-5 (:foreground level5))
+		      (outline-6 (:foreground level6))
+		      (outline-7 (:foreground level7))
+		      (outline-8 (:foreground level8))
 		      )	     
 		     ;; Forms after the face specifications are evaluated.
 		     ;; (palette vars can be used, read below for details.)
@@ -165,4 +176,3 @@
                    (file-name-directory load-file-name))))
 
 (provide-theme 'trans-side-testing)
-
