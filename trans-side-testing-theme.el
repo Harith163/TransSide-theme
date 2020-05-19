@@ -61,6 +61,8 @@
 		      (pastel-pink "#ffa5d8")
 		      (pastel-lilac "#be9ddf")
 		      (pastel-violet "#9579d1")
+
+		      (standout "#00FF94")
 				      
 		      ;;Warning, comment, and other miscellanious colors
 		      (builtin "#8C73ED")
@@ -75,8 +77,8 @@
 		      (font-lock-constant-face (:foreground pastel-violet))
 		      (font-lock-doc-face (:foreground purple-dark))
 		      (font-lock-negation-char-face (:foreground purple-dark))
-		      (font-lock-function-name-face (:foreground magenta-dark))
-		      (font-lock-keyword-face (:foreground aqua-light :bold t))
+		      (font-lock-function-name-face (:foreground pastel-blue))
+		      (font-lock-keyword-face (:foreground pastel-lilac :bold t))
 		      (font-lock-string-face (:foreground pink-light-alt))
 		      (font-lock-type-face (:foreground pink-light))
 		      (font-lock-variable-name-face (:foreground aqua-light-alt))
@@ -147,8 +149,8 @@
 		      (org-level-7 (:inherit 'outline-7 :weight 'normal))
 		      (org-level-8 (:inherit 'outline-8 :weight 'normal))
 
-		      (org-block (:background "#0a001a"))
-		      (org-block-begin-line (:inherit 'font-lock-comment-face :background "#1a002a"))
+		      (org-block (:background "#040014"))
+		      (org-block-begin-line (:inherit 'font-lock-comment-face :background "#140024"))
 		      (org-block-end-line (:inherit 'org-block-begin-line))
 
 		      
@@ -179,6 +181,17 @@
 
 		      ;;Ace Window Mode stuff
 		      (aw-leading-char-face (:height 2.0 :inherit 'ace-jump-face-foreground))
+
+		      ;;latex faces
+		      (font-latex-sectioning-0-face (:height 1.1 :inherit 'font-latex-sectioning-1-face))
+		      (font-latex-sectioning-1-face (:height 1.1 :inherit 'font-latex-sectioning-2-face))
+		      (font-latex-sectioning-2-face (:height 1.1 :inherit 'font-latex-sectioning-3-face))
+		      (font-latex-sectioning-3-face (:height 1.1 :inherit 'font-latex-sectioning-4-face))
+		      (font-latex-sectioning-4-face (:height 1.1 :inherit 'font-latex-sectioning-5-face))
+		      (font-latex-sectioning-5-face (:weight 'bold :slant 'italic :foreground pastel-blue))
+
+		      (font-latex-math-face (:foreground standout :weight 'semi-bold))
+
 		      )	     
 		     ;; Forms after the face specifications are evaluated.
 		     ;; (palette vars can be used, read below for details.)

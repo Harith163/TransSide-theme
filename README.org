@@ -1,18 +1,31 @@
+#+startup: inlineimages
 
 * My emacs theme(s)!!! 
+I've found most themes, especially dark themes have always come /close/ to what I've needed but for one reason or the other fallen short of my expectations. I'm working on my own theme(s) that are better. Once I feel like its kinda ready, I'll maybe? put it on melpa/elpa
 
-I've found most themes, especially dark themes have always come /close/ to what I've needed but for one reason or the other fallen short of my expectations. I'm working on my own theme(s) that are better. 
-
-[[file:screenshot.png][Org mode + my .bashrc]]
+[[screenshot-1.png]]
+[[screenshot-2.png]]
 
 * Todo
-  - Support for more font faces
-  - Using contrast better to demarcate the important from the not.
-  - Need to get a consistent color-scheme language so that similar things use similar colors.
-  - Need to switch over to a better way to deal with themes(autothemer.el)
+** Things to work on.
+*** Color theory
+*** Color Consistency
+*** Design Language
+
+** Modes to support
+*** Ivy and it's siblings
+*** Ibuffer and Dired
+*** Magit
+*** Undo-tree
+*** Ido
+*** org agenda and capture
+
+** Mode supported
+*** Basic Org mode stuff
+*** some latex face
+*** mode-line
 
 * Trans-Side
-
 To use this theme, first clone this repo/copy this theme into a custom theme folder. Then add this line to your init.el file to tell emacs to add that folder to its path. 
    #+begin_src elisp 
     (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
