@@ -11,7 +11,7 @@
 		      
 		      ;; Specify the color palette for each of the classes above.
 		      ;;basic bg/fg colors
-		      (bg-main "#0b000b")
+		      (bg-main "#00000f")
 		      (bg-black "#080808")
 		      (bg-dark "#303030")
 		      (bg-gray "#c6c6c6")
@@ -86,9 +86,13 @@
 		      (scroll-bar nil)
 		      (border nil)
 		      (cursor (:background fg-gray))
-		      (fringe (:background bg-black))
+		      (fringe (:background bg-main))
 		      (highlight (:foreground mygray1-dark :background mygray2))
 		      (region (:foreground mygray2-dark :background mygray1))
+
+		      ;;line number mode
+		      (linum (:height 0.85 :inherit ('shadow 'default)))
+		      (linum-relative-current-face (:weight 'bold :foreground pastel-aqua :background mygray2 :inherit 'linum))
 		      (line-number (:inherit ('shadow 'default)))
 		      (line-number-current-line (:inherit 'line-number))
 
@@ -115,7 +119,6 @@
 		      (org-footnote (:foreground mygray1-dark :underline t))
 		      (org-link (:foreground pink-light :underline t))
 		      (org-special-keyword (:foreground magenta-dark))
-		      (org-block (:foreground mygray1-dark))
 		      (org-quote (:inherit 'org-block :slant 'italic))
 		      (org-verse (:inherit 'org-block :slant 'italic))
 		      (org-todo (:foreground aqua-light :bold t :box nil))
@@ -131,7 +134,9 @@
 		      (org-scheduled-today (:foreground magenta-dark))
 		      (org-ellipsis (:foreground builtin))
 		      (org-varbatim (:foreground bg-gray))
-		      (org-document-info-keyword (:foreground magenta-dark))
+		      (org-document-info-keyword (:foreground pastel-lilac :height 1.1))
+		      (org-document-info (:foreground pastel-blue :height 1.1))
+		      (org-document-title (:foreground pastel-blue :weight 'bold :height 1.1))
 
 		      (org-level-1 (:inherit 'outline-1 :weight 'bold :height 1.3 :slant 'italic))
 		      (org-level-2 (:inherit 'outline-2 :weight 'normal :height 1.1 :slant 'italic))
@@ -141,6 +146,11 @@
 		      (org-level-6 (:inherit 'outline-6 :weight 'normal))
 		      (org-level-7 (:inherit 'outline-7 :weight 'normal))
 		      (org-level-8 (:inherit 'outline-8 :weight 'normal))
+
+		      (org-block (:background "#0a001a"))
+		      (org-block-begin-line (:inherit 'font-lock-comment-face :background "#1a002a"))
+		      (org-block-end-line (:inherit 'org-block-begin-line))
+
 		      
 		      ;;Rainbow delimiters
 		      (rainbow-delimiters-depth-1-face (:foreground mygray1))
@@ -166,6 +176,9 @@
 		      (outline-6 (:foreground level6))
 		      (outline-7 (:foreground level7))
 		      (outline-8 (:foreground level8))
+
+		      ;;Ace Window Mode stuff
+		      (aw-leading-char-face (:height 2.0 :inherit 'ace-jump-face-foreground))
 		      )	     
 		     ;; Forms after the face specifications are evaluated.
 		     ;; (palette vars can be used, read below for details.)
