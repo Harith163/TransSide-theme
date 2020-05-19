@@ -1,0 +1,68 @@
+#+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+options: author:t broken-links:nil c:nil creator:nil
+#+date: \today
+#+title: A File to Showcase a theme
+#+author: Skye Srinivasan Harith
+#+email: kaushik.harith@gmail.com
+#+language: en
+#+select_tags: export
+#+exclude_tags: noexport
+#+creator: Emacs 26.3 (Org mode 9.3.6)
+
+* This is a top level heading
+Hey Look, some text!! Isn't this cool??
+** This is a level 2 heading.
+   This is what a code block looks like in org mode.
+   #+begin_src emacs-lisp
+     (defvar 'my/Dummy)
+
+     (setq my/Dummy "This is what emacs-lisp looks like")
+   #+end_src
+
+*** Wonder what a level 3 heading looks like?
+    #+begin_src latex
+      \documentclass[a4paper,12pt]{article}
+
+      \usepackage{geometry}
+      \usepackage{things}
+
+      \begin{document}
+
+      \section{This is a section.}
+
+      This is an inline equation $\Lambda = Pain$. \footnote{Here is a footnote.}
+
+      \end{document}
+    #+end_src
+
+**** You didn't there was a 4th level did you??
+     Shell stuff looks like this
+     #+begin_src shell
+       export LANG=en_US.UTF-8
+
+       # Preferred editor for local and remote sessions
+       if [[ -n $SSH_CONNECTION ]]; then
+	 export EDITOR='emacsclient'
+       else
+	 export EDITOR='emacs'
+       fi
+
+       #change cd path variable
+       export CDPATH="$CDPATH:$HOME/Documents/SchoolStuff/:$HOME/Documents/SchoolStuff/ThesisUndergraduate/"
+
+       # Compilation flags
+       # export ARCHFLAGS="-arch x86_64"
+
+       ZSH_THEME="powerlevel10k/powerlevel10k"
+
+       ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
+       if [[ ! -d $ZSH_CACHE_DIR ]]; then
+	 mkdir $ZSH_CACHE_DIR
+       fi
+     #+end_src
+***** MORE LEVELS
+****** EEEEEEE
+******* COLORS
+******** NEON
+******** OOH 
+******** AAHH
