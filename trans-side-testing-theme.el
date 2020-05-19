@@ -11,28 +11,29 @@
 		      
 		      ;; Specify the color palette for each of the classes above.
 		      ;;basic bg/fg colors
-		      (bg-black      "#080808")
-		      (bg-dark       "#303030")
-		      (bg-gray       "#c6c6c6")
-		      (fg-white      "#FFFFFF")
-		      (fg-dark       "#5e5e5e")
-		      (fg-gray       "#919191")
+		      (bg-main "#0b000b")
+		      (bg-black "#080808")
+		      (bg-dark "#303030")
+		      (bg-gray "#c6c6c6")
+		      (fg-white "#FFFFFF")
+		      (fg-dark "#5e5e5e")
+		      (fg-gray "#919191")
 
 		      ;;darks
-		      (pink-dark     "#a43261")
-		      (blue-dark     "#006ca5")
-		      (aqua-dark     "#007086")
-		      (purple-dark   "#6751a6")
-		      (magenta-dark  "#913e88")
-		      (blue2-dark    "#0061b1")
+		      (pink-dark "#a43261")
+		      (blue-dark "#006ca5")
+		      (aqua-dark "#007086")
+		      (purple-dark "#6751a6")
+		      (magenta-dark "#913e88")
+		      (blue2-dark "#0061b1")
 
 		      ;;lights
-		      (pink-light    "#ff81b8")
-		      (blue-light    "#3bd6ff")
-		      (aqua-light    "#00ddf4")
-		      (purple-light  "#a38cc5")
+		      (pink-light "#ff81b8")
+		      (blue-light "#3bd6ff")
+		      (aqua-light "#00ddf4")
+		      (purple-light "#a38cc5")
 		      (magenta-light "#ffa7f6")
-		      (blue2-light   "#93c9ff")
+		      (blue2-light "#93c9ff")
 
 		      ;;light alt
 		      (pink-light-alt "#e85e8a")
@@ -45,14 +46,14 @@
 		      (mygray2-dark "#141414")
 
 		      ;;Level Colors
-		      (level1 "#00EEFF")
-		      (level2 "#e85e8a")
-		      (level3 "#00ccff")
-		      (level4 "#C96269")
-		      (level5 "#00FCEE")
-		      (level6 "#8368D5")
-		      (level7 "#00FF75")
-		      (level8 "#6B62E2")
+		      (level1 "#FF619D")
+		      (level2 "#00ccFF")
+		      (level3 "#8368D5")
+		      (level4 "#00eeff")
+		      (level5 "#F561FF")
+		      (level6 "#00FCEE")
+		      (level7 "#6B62E2")
+		      (level8 "#00FF75")
 
 		      ;;Alternate Pallate
 		      (pastel-blue "#7eb8da")
@@ -62,15 +63,16 @@
 		      (pastel-violet "#9579d1")
 				      
 		      ;;Warning, comment, and other miscellanious colors
-		      (builtin "#0068C5")
+		      (builtin "#8C73ED")
 		      (comment "#37465f")
 		      (warning "#ff0069"))
 		     
 		     ;; specifications for Emacs faces.
 		     (;; Default faces. Most commonly seen, used and inherited.
-		      (default (:font "DejaVu Sans Mono 15" :foreground fg-white :background bg-black))
+		      (default (:font "DejaVu Sans Mono 15" :foreground fg-white :background bg-main))
 		      (font-lock-builtin-face (:foreground builtin))
 		      (font-lock-comment-face (:foreground comment))
+		      (font-lock-constant-face (:foreground pastel-violet))
 		      (font-lock-doc-face (:foreground purple-dark))
 		      (font-lock-negation-char-face (:foreground purple-dark))
 		      (font-lock-function-name-face (:foreground magenta-dark))
@@ -92,11 +94,11 @@
 
 
 		      ;;Mode line 
-		      (mode-line (:box (:line-width 1 :color nil) :foreground pink-light-alt :background bg-black))
-		      (mode-line-inactive (:weight 'light :box (:line-width 1 :color nil :style 'pressed-button) :foreground pink-light-alt :background bg-black :inherit 'mode-line))
+		      (mode-line (:box (:line-width 1 :color nil) :foreground aqua-light-alt :background bg-black))
+		      (mode-line-inactive (:weight 'light :box (:line-width 1 :color nil :style 'pressed-button) :foreground aqua-light-alt :background bg-black :inherit 'mode-line))
 		      (mode-line-highlight (:box nil :foreground aqua-light :weight 'bold))
 		      (mode-line-emphasis (:weight 'bold :foreground mygray1))
-		      (mode-line-buffer-id (:weight 'bold :bold t :foreground pink-light-alt :background nil))
+		      (mode-line-buffer-id (:weight 'bold :bold t :foreground aqua-light-alt :background nil))
 
 
 		      ;;iSearch
@@ -116,8 +118,8 @@
 		      (org-block (:foreground mygray1-dark))
 		      (org-quote (:inherit 'org-block :slant 'italic))
 		      (org-verse (:inherit 'org-block :slant 'italic))
-		      (org-todo (:foreground aqua-light :bold t))
-		      (org-done (:foreground blue2-dark :bold t))
+		      (org-todo (:foreground aqua-light :bold t :box nil))
+		      (org-done (:foreground pink-dark :bold t :box nil))
 		      (org-warning (:foreground warning :underline t))
 		      (org-agenda-structure (:foreground mygray1-dark :background bg-dark :weight 'bold :box (:color bg-gray) ))
 		      (org-agenda-date (:foreground aqua-light-alt :height 1.1))
