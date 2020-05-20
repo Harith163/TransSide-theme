@@ -106,7 +106,7 @@
 		      (line-number-current-line (:inherit 'line-number))
 
 		      ;;Mode line 
-		      (mode-line (:box (:line-width 1 :color nil) :foreground aqua-light-alt :background bg-black))
+		      (mode-line (:box (:line-width 1 :color nil :style 'released-button) :foreground aqua-light-alt :background bg-black))
 		      (mode-line-inactive (:weight 'light :box (:line-width 1 :color nil :style 'pressed-button) :foreground aqua-light-alt :background bg-black :inherit 'mode-line))
 		      (mode-line-highlight (:box nil :foreground aqua-light :weight 'bold))
 		      (mode-line-emphasis (:weight 'bold :foreground mygray1))
@@ -197,7 +197,7 @@
 		      (font-latex-math-face (:foreground standout :weight 'semi-bold))
 
 		      ;;Ivy and counsel stuff
-		      
+		      		      
 		      )	     
 		     ;; Forms after the face specifications are evaluated.
 		     ;; (palette vars can be used, read below for details.)
