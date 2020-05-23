@@ -10,7 +10,7 @@
 #+creator: Emacs 26.3 (Org mode 9.3.6)
 
 * This is a top level heading
-Hey Look, some text!! Isn't this cool??
+Hey Look, some text!! Isn't this cool?? [[file:Showcase.org::This is a top level heading][Org-links look like this]]
 ** This is a level 2 heading.
    This is what a code block looks like in org mode.
    #+begin_src emacs-lisp
@@ -35,7 +35,7 @@ Hey Look, some text!! Isn't this cool??
       \end{document}
     #+end_src
 
-**** You didn't there was a 4th level did you??
+**** You didn't think there was a 4th level did you??
      Shell stuff looks like this
      #+begin_src shell
        export LANG=en_US.UTF-8
