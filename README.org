@@ -1,30 +1,30 @@
 #+startup: inlineimages
 
-* My emacs theme(s)!!! 
+* My emacs theme(s)!!!
 I've found most themes, especially dark themes have always come /close/ to what I've needed but for one reason or the other fallen short of my expectations. I'm working on my own theme(s) that are better. Once I feel like its kinda ready, I'll maybe? put it on melpa/elpa
 
 [[screenshot-1.png]]
 [[screenshot-2.png]]
-
 * Todo
 ** Things to work on.
 *** Color theory
 *** Color Consistency
 *** Design Language
-
 ** Modes to support
 *** Ivy and it's siblings
 *** Ibuffer and Dired
 *** Magit
 *** Undo-tree
-*** Ido
-*** org agenda and capture
-
+*** org stuff
+*** mu4e
 ** Mode supported
 *** Basic Org mode stuff
 *** some latex face
 *** mode-line
-
+*** Company
+*** rainbow delimiters
+*** Avy and Ace Window
+*** 
 * Trans-Side
 To use this theme, first clone this repo/copy this theme into a custom theme folder. Then add this line to your init.el file to tell emacs to add that folder to its path. 
    #+begin_src elisp 
