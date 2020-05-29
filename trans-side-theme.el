@@ -84,7 +84,7 @@
 		      (font-lock-string-face (:foreground pink-light-alt))
 		      (font-lock-type-face (:foreground pink-light))
 		      
-		      (font-lock-function-name-face (:foreground pastel-blue))
+		      (font-lock-function-name-face (:foreground aqua-light))
 		      (font-lock-variable-name-face (:foreground aqua-light-alt))
 		      (font-lock-constant-face (:foreground pastel-violet))
 		      
