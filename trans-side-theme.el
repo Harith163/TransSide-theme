@@ -95,15 +95,18 @@
 		      (border nil)
 		      (cursor (:background fg-gray))
 		      (fringe (:background bg-main))
-		      (highlight (:foreground mygray1-dark :background mygray2))
+		      (highlight (:foreground standout :background mygray2-dark))
+		      ;;(highlight (:foreground bg-black :background blue2-light))
+		      (lazy-highlight (:background fg-gray))
 		      (region (:foreground mygray2-dark :background mygray1))
 
 		      ;;more basic things!!
 		      (bold (:weight 'bold :foreground standout))
 		      (warning (:weight 'bold :foreground warning))
+		      (match (:background level7))
 
 		      ;;line number mode
-		      (linum (:height 0.85 :inherit ('shadow 'default)))
+		      (linum (:height 0.85 :inherit '(shadow default)))
 		      (linum-relative-current-face (:weight 'bold :foreground pastel-aqua :background mygray2 :inherit 'linum))
 		      (line-number (:inherit ('shadow 'default)))
 		      (line-number-current-line (:inherit 'line-number))
@@ -116,7 +119,7 @@
 		      (mode-line-buffer-id (:weight 'bold :bold t :foreground aqua-light-alt :background nil))
 
 		      ;;iSearch
-		      (isearch (:weight 'bold :foreground warning :background mygray2))
+		      (isearch (:weight 'bold :foreground warning :background mygray2-dark))
 		      (isearch-fail (:background bg-black))
 
 		      ;;Minibuffer prompt
@@ -146,9 +149,9 @@
 		      (org-scheduled-today (:foreground magenta-dark))
 		      (org-ellipsis (:foreground builtin))
 		      (org-varbatim (:foreground bg-gray))
-		      (org-document-info-keyword (:foreground pastel-lilac :height 1.1))
-		      (org-document-info (:foreground pastel-blue :height 1.1))
-		      (org-document-title (:foreground pastel-blue :weight 'bold :height 1.1))
+		      (org-document-info-keyword (:foreground pastel-lilac :height 1.5))
+		      (org-document-info (:foreground pastel-blue :height 1.5))
+		      (org-document-title (:foreground pastel-blue :weight 'bold :height 1.5 :italic t))
 
 		      (org-level-1 (:inherit 'outline-1 :weight 'bold :height 1.3 :slant 'italic))
 		      (org-level-2 (:inherit 'outline-2 :weight 'normal :height 1.1 :slant 'italic))
@@ -335,16 +338,31 @@
 		      (mu4e-unread-face (:weight 'bold :inherit 'font-lock-keyword-face))
 
 		      ;;Ivy.
-		       (swiper-line-face (:inherit 'highlight))
-		       (swiper-background-match-face-4 (:inherit 'swiper-match-face-4))
-		       (swiper-background-match-face-3 (:inherit 'swiper-match-face-3))
-		       (swiper-background-match-face-2 (:inherit 'swiper-match-face-2))
-		       (swiper-background-match-face-1 (:inherit 'swiper-match-face-1))
-		       (swiper-match-face-4 (:inherit 'isearch-fail))
-		       (swiper-match-face-3 (:inherit 'match))
-		       (swiper-match-face-2 (:inherit 'isearch))
-		       (swiper-match-face-1 (:inherit 'lazy-highlight))
-		       )	     
+		      (ivy-match-required-face (:foreground warning :inherit 'minibuffer-prompt))
+		      (ivy-confirm-face (:foreground pastel-lilac :inherit 'minibuffer-prompt))
+		      (ivy-minibuffer-match-face-4 (:inherit 'ivy-minibuffer-match-face-2))
+		      (ivy-minibuffer-match-face-3 (:inherit 'ivy-minibuffer-match-face-2))
+		      (ivy-minibuffer-match-face-2 (:inherit 'ivy-minibuffer-match-face-1))
+		      (ivy-minibuffer-match-face-1 (:weight 'bold :foreground standout))
+		      (ivy-minibuffer-match-highlight (:inherit 'highlight))
+		      (ivy-current-match (:inherit 'highlight))
+		      (ivy-cursor (:inherit 'highlight))
+
+		      ;;Swiper
+		      (swiper-line-face (:inherit 'highlight))
+		      (swiper-background-match-face-4 (:inherit 'swiper-match-face-4))
+		      (swiper-background-match-face-3 (:inherit 'swiper-match-face-3))
+		      (swiper-background-match-face-2 (:inherit 'swiper-match-face-2))
+		      (swiper-background-match-face-1 (:inherit 'swiper-match-face-1))
+		      (swiper-match-face-4 (:inherit 'isearch-fail))
+		      (swiper-match-face-3 (:inherit 'match))
+		      (swiper-match-face-2 (:inherit 'isearch))
+		      (swiper-match-face-1 (:inherit 'lazy-highlight))
+
+		      ;;Counsel.
+		      (counsel-key-binding (:inherit 'font-lock-keyword-face))
+
+		      )
 		     ;; Forms after the face specifications are evaluated.
 		     ;; (palette vars can be used, read below for details.)
 		     )

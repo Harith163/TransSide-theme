@@ -1,5 +1,6 @@
 #+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
 #+options: author:t broken-links:nil c:nil creator:nil
+#+startup: overview inlineimages
 #+date: \today
 #+title: A File to Showcase a theme
 #+author: Skye Srinivasan Harith
