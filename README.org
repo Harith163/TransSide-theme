@@ -5,6 +5,8 @@ I've found most themes, especially dark themes have always come /close/ to what 
 
 [[screenshot-1.png]]
 [[screenshot-2.png]]
+[[screenshot-3.png]]
+
 * Things to work on.
 ** ☛TODO Ideological things 
 *** Learn color theory
