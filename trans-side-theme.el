@@ -11,9 +11,10 @@
 		      
 		      ;; Specify the color palette for each of the classes above.
 		      ;;basic bg/fg colors
-		      (bg-main "#00000a")
+		      (bg-main "#00000f")
 		      (bg-black "#080808")
 		      (bg-dark "#303030")
+		      (bg-dark2 "#1f1f1f")		      
 		      (bg-gray "#c6c6c6")
 		      (fg-white "#FFFFFF")
 		      (fg-dark "#5e5e5e")
@@ -62,7 +63,8 @@
 		      (pastel-lilac "#be9ddf")
 		      (pastel-violet "#9579d1")
 
-		      (standout "#00FF94")
+ 		      ;; (standout "#00FF94")
+		      (standout "#00AAA6")
 				      
 		      ;;Warning, comment, and other miscellanious colors
 		      (builtin "#8C73ED")
@@ -111,13 +113,6 @@
 		      (linum-relative-current-face (:weight 'bold :foreground pastel-aqua :background mygray2 :inherit 'linum))
 		      (line-number (:inherit ('shadow 'default)))
 		      (line-number-current-line (:inherit 'line-number))
-
-		      ;;Mode line 
-		      (mode-line (:box (:line-width 1 :color nil :style 'released-button) :foreground aqua-light-alt :background bg-black))
-		      (mode-line-inactive (:weight 'light :box (:line-width 1 :color nil :style 'pressed-button) :foreground aqua-light-alt :background bg-black :inherit 'mode-line))
-		      (mode-line-highlight (:box nil :foreground aqua-light :weight 'bold))
-		      (mode-line-emphasis (:weight 'bold :foreground mygray1))
-		      (mode-line-buffer-id (:weight 'bold :bold t :foreground aqua-light-alt :background nil))
 
 		      ;;iSearch
 		      (isearch (:weight 'bold :foreground warning :background mygray2-dark))
@@ -193,13 +188,6 @@
 		      (outline-8 (:foreground level8))
 
 		      ;;latex faces
-		      (font-latex-sectioning-0-face (:height 1.1 :inherit 'font-latex-sectioning-1-face))
-		      (font-latex-sectioning-1-face (:height 1.1 :inherit 'font-latex-sectioning-2-face))
-		      (font-latex-sectioning-2-face (:height 1.1 :inherit 'font-latex-sectioning-3-face))
-		      (font-latex-sectioning-3-face (:height 1.1 :inherit 'font-latex-sectioning-4-face))
-		      (font-latex-sectioning-4-face (:height 1.1 :inherit 'font-latex-sectioning-5-face))
-		      (font-latex-sectioning-5-face (:weight 'bold :slant 'italic :foreground pastel-blue))
-
 		      (font-latex-math-face (:foreground standout :weight 'semi-bold))
 
 		      ;;Company
@@ -221,87 +209,13 @@
 		      (company-preview-search (:background blue2-dark :inherit 'company-preview))
 		      (company-echo nil)
 
-		      ;;Magit
-		      (magit-section-highlight (:background bg-dark))
-		      (magit-section-heading (:weight 'bold :foreground pink-light))
-		      (magit-section-secondary-heading (:weight 'bold :foreground aqua-dark))
-		      (magit-section-heading-selection (:foreground aqua-light-alt))
-
-		      (magit-diff-file-heading (:weight 'bold ))
-		      (magit-diff-file-heading-highlight (:inherit 'magit-section-highlight))
-		      (magit-diff-file-heading-selection (:foreground pink-light-alt :inherit 'magit-diff-file-heading-highlight))
-		      (magit-diff-hunk-heading (:foreground bg-gray :background mygray2))
-		      (magit-diff-hunk-heading-highlight (:foreground bg-gray :background fg-dark))
-		      (magit-diff-hunk-heading-selection (:foreground "#36C937" :inherit 'magit-diff-hunk-heading-highlight))
-		      (magit-diff-hunk-region (:inherit 'bold))
-		      (magit-diff-revision-summary (:inherit 'magit-diff-hunk-heading))
-		      (magit-diff-revision-summary-highlight (:inherit 'magit-diff-hunk-heading-highlight))
-		      (magit-diff-lines-heading (:foreground mygray1-dark :background pink-dark :inherit 'magit-diff-hunk-heading-highlight))
-		      (magit-diff-lines-boundary (:inherit 'magit-diff-lines-heading))
-		      (magit-diff-conflict-heading (:inherit 'magit-diff-hunk-heading))
-		      (magit-diff-added (:foreground mygray1 :background mygray2))
-		      (magit-diff-removed (:foreground mygray1 :background mygray2))
-		      (magit-diff-our (:inherit 'magit-diff-removed))
-		      (magit-diff-base (:foreground fg-white :background fg-dark))
-		      (magit-diff-their (:inherit 'magit-diff-added))
-		      (magit-diff-context (:foreground bg-gray))
-		      (magit-diff-added-highlight (:foreground mygray1-dark :background mygray2))
-		      (magit-diff-removed-highlight (:foreground mygray1-dark :background mygray2))
-		      (magit-diff-our-highlight (:inherit 'magit-diff-removed-highlight))
-		      (magit-diff-base-highlight (:foreground mygray1 :background fg-dark))
-		      (magit-diff-their-highlight (:inherit 'magit-diff-added-highlight))
-		      (magit-diff-context-highlight (:foreground bg-gray :background bg-dark))
-		      (magit-diff-whitespace-warning (:inherit 'trailing-whitespace))
-		      (magit-diffstat-added (:foreground fg-dark))
-		      (magit-diffstat-removed (:foreground pink-dark))
-		      
-
 		      ;;Avy and Ace-Window
 		      (avy-background-face (:foreground fg-dark))
 		      (avy-lead-face (:foreground bg-black :background background-standout1))
 		      (avy-lead-face-0 (:foreground bg-black :background background-standout2))
 		      (avy-lead-face-1 (:foreground bg-black :background pink-light))
 		      
-		      (aw-leading-char-face (:height 2.0 :inherit 'avy-lead-face))
-
-		      ;;mu4e stuff
-		      (mu4e-region-code (:background comment))
-		      (mu4e-compose-header-face (:slant 'italic :inherit 'message-separator))
-		      (mu4e-compose-separator-face (:slant 'italic :inherit 'message-separator))
-		      (mu4e-warning-face (:weight 'bold :slant 'normal :inherit 'font-lock-warning-face))
-		      (mu4e-ok-face (:weight 'bold :slant 'normal :inherit 'font-lock-comment-face))
-		      (mu4e-system-face (:slant 'italic :inherit 'font-lock-comment-face))
-		      (mu4e-cited-7-face (:weight 'normal :slant 'italic :inherit 'font-lock-type-face))
-		      (mu4e-cited-6-face (:weight 'normal :slant 'italic :inherit 'font-lock-comment-delimiter-face))
-		      (mu4e-cited-5-face (:weight 'normal :slant 'italic :inherit 'font-lock-comment-face))
-		      (mu4e-cited-4-face (:weight 'normal :slant 'italic :inherit 'font-lock-keyword-face))
-		      (mu4e-cited-3-face (:weight 'normal :slant 'italic :inherit 'font-lock-variable-name-face))
-		      (mu4e-cited-2-face (:weight 'normal :slant 'italic :inherit 'font-lock-preprocessor-face))
-		      (mu4e-cited-1-face (:weight 'normal :slant 'italic :inherit 'font-lock-builtin-face))
-		      (mu4e-attach-number-face (:weight 'bold :inherit 'font-lock-variable-name-face))
-		      (mu4e-url-number-face (:weight 'bold :inherit 'font-lock-constant-face))
-		      (mu4e-footer-face (:inherit 'font-lock-comment-face))
-		      (mu4e-view-body-face (:inherit 'default))
-		      (mu4e-modeline-face (:weight 'bold :inherit 'font-lock-string-face))
-		      (mu4e-context-face (:weight 'bold :inherit 'mu4e-title-face))
-		      (mu4e-title-face (:weight 'bold :inherit 'font-lock-type-face))
-		      (mu4e-highlight-face (:inherit 'highlight))
-		      (mu4e-contact-face (:inherit 'font-lock-variable-name-face))
-		      (mu4e-link-face (:inherit 'link))
-		      (mu4e-special-header-value-face (:inherit 'font-lock-builtin-face))
-		      (mu4e-header-value-face (:inherit 'font-lock-type-face))
-		      (mu4e-header-key-face (:weight 'bold :inherit 'message-header-name))
-		      (mu4e-header-marks-face (:inherit 'font-lock-preprocessor-face))
-		      (mu4e-header-highlight-face (:weight 'bold :underline t :inherit 'hl-line))
-		      (mu4e-header-title-face (:inherit 'font-lock-type-face))
-		      (mu4e-header-face (:inherit 'default))
-		      (mu4e-forwarded-face (:weight 'normal :inherit 'font-lock-builtin-face))
-		      (mu4e-replied-face (:weight 'normal :inherit 'font-lock-builtin-face))
-		      (mu4e-flagged-face (:weight 'bold :inherit 'font-lock-constant-face))
-		      (mu4e-draft-face (:inherit 'font-lock-string-face))
-		      (mu4e-trashed-face (:strike-through t :inherit 'font-lock-comment-face))
-		      (mu4e-moved-face (:slant 'italic :inherit 'font-lock-comment-face))
-		      (mu4e-unread-face (:weight 'bold :inherit 'font-lock-keyword-face))
+		      (aw-leading-char-face (:height 2.0 :foreground warning))
 
 		      ;;Ivy.
 		      (ivy-match-required-face (:foreground warning :inherit 'minibuffer-prompt))
@@ -328,36 +242,27 @@
 		      ;;Counsel.
 		      (counsel-key-binding (:inherit 'font-lock-keyword-face))
 
-		      ;;Shell stuff 
-		      (term (:inherit 'default))
-		      (term-bold (:weight 'bold))
-		      (term-underline (:underline t))
-		      (term-color-black (:foreground bg-main :background bg-main))
-		      (term-color-red (:foreground warning :background warning))
-		      (term-color-green (:foreground background-standout1 :background background-standout1))
-		      (term-color-yellow (:foreground background-standout1 :background background-standout1))
-		      (term-color-blue (:foreground background-standout2 :background background-standout2))
-		      (term-color-magenta (:foreground warning :background warning))
-		      (term-color-cyan (:foreground level2 :background level2))
-		      (term-color-white (:foreground fg-white :background fg-white))
+		      ;;Modeline-general.
+		      (mode-line (:foreground fg-white :background purple-dark))
+		      (mode-line-inactive (:foreground mygray1-dark :background magenta-dark))
+		      
+		      ;;Nano modeline.
+		      (nano-modeline-inactive-status-** (:inherit 'mode-line-inactive  :background pastel-blue :foreground bg-black))
+		      (nano-modeline-inactive-status-RW (:inherit 'mode-line-inactive  :background pink-dark))
+		      (nano-modeline-inactive-status-RO (:inherit 'mode-line-inactive  :background pink-dark))
+		      (nano-modeline-inactive-secondary (:inherit 'mode-line-inactive))
+		      (nano-modeline-inactive-primary (:inherit 'mode-line-inactive))
+		      (nano-modeline-inactive-name (:inherit 'mode-line-inactive))
+		      (nano-modeline-inactive (:inherit 'mode-line-inactive))
+		      
+		      (nano-modeline-active-status-** (:inherit 'mode-line  :background pastel-aqua :foreground bg-black))
+		      (nano-modeline-active-status-RW (:inherit 'mode-line :background pastel-violet))
+		      (nano-modeline-active-status-RO (:inherit 'mode-line :background pastel-violet))
+		      (nano-modeline-active-secondary (:inherit ('mode-line 'italic)))
+		      (nano-modeline-active-primary (:inherit ('mode-line 'italic)))
+		      (nano-modeline-active-name (:inherit ('mode-line 'bold)))
+		      (nano-modeline-active (:inherit 'mode-line))
 
-		      (eshell-prompt (:weight 'bold :foreground pastel-pink))
-		      (eshell-ls-clutter (:weight 'bold :foreground warning))
-		      (eshell-ls-product (:foreground pink-light))
-		      (eshell-ls-backup (:foreground pink-light))
-		      (eshell-ls-archive (:weight 'bold :foreground pastel-lilac))
-		      (eshell-ls-missing (:weight 'bold :foreground warning))
-		      (eshell-ls-special (:weight 'bold :foreground level5))
-		      (eshell-ls-unreadable (:foreground purple-light))
-		      (eshell-ls-readonly (:foreground pastel-pink))
-		      (eshell-ls-executable (:weight 'bold :foreground background-standout1))
-		      (eshell-ls-symlink (:weight 'bold :foreground level4))
-		      (eshell-ls-directory (:weight 'bold :foreground pastel-aqua))
-
-		      ;;Battery stuff
-		      (fancy-battery-critical (:foreground warning))
-		      (fancy-battery-charging (:foreground standout))
-		      (fancy-battery-discharging (:foreground pastel-lilac))
 		      )
 		     ;; Forms after the face specifications are evaluated.
 		     ;; (palette vars can be used, read below for details.)
