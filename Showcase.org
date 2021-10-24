@@ -3,7 +3,7 @@
 #+startup: overview inlineimages
 #+date: \today
 #+title: A File to Showcase a theme
-#+author: Skye Srinivasan Harith
+#+author: Kaushik Srinivasan Harith
 #+email: kaushik.harith@gmail.com
 #+language: en
 #+select_tags: export
@@ -12,6 +12,7 @@
 
 * This is a top level heading
   Hey Look, some text!! Isn't this cool?? [[file:Showcase.org::This is a top level heading][Org-links look like this]]
+  
 ** This is a level 2 heading.
    This is what a code block looks like in org mode.
    #+begin_src emacs-lisp
@@ -61,6 +62,7 @@
 	 mkdir $ZSH_CACHE_DIR
        fi
      #+end_src
+     
 ***** MORE LEVELS
 ****** EEEEEEE
 ******* COLORS

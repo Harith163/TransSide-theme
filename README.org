@@ -4,30 +4,24 @@
 I've found most themes, especially dark themes have always come /close/ to what I've needed but for one reason or the other fallen short of my expectations. I'm working on my own theme(s) that are better. Once I feel like its kinda ready, I'll maybe? put it on melpa/elpa
 
 [[screenshot-1.png]]
-[[screenshot-2.png]]
-[[screenshot-3.png]]
 
 * Things to work on.
 ** ☛TODO Ideological things 
 *** Learn color theory
 *** Work on color consistency
-*** Create a proper design language
-** Modes to support
-*** ☛TODO Magit
-*** ☛TODO mu4e
 ** Mode supported
    + Basic Org mode stuff
    + Basic Latex
-   + a pretty 3d mode-line
+   + NANO modeline
    + Company
    + Rainbow delimiters
    + Avy and Ace Window
    + Ivy and it's siblings (ish)
    + Ibuffer and Dired (ish)
-   + Org Mode
      
 * Trans-Side
-To use this theme, first clone this repo/copy this theme into a custom theme folder. Then add this line to your init.el file to tell emacs to add that folder to its path. 
+  To use this theme, first clone this repo/copy this theme into a custom theme folder. Then add this line to your init.el file to tell emacs to add that folder to its path.
+
    #+begin_src elisp 
     (add-to-list 'custom-theme-load-path "path/to/your/custom/theme/folder")
    #+end_src
@@ -37,4 +31,6 @@ then load the theme by adding this.
     (load-theme 'trans-side t)
    #+end_src
 
-Thats it!
+   If it doesn't work, consider installing autothemer from melpa first :/
+
+   Thats it!
