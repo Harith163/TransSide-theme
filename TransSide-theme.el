@@ -4,7 +4,7 @@
   (error "Requires Emacs 24 or later"))
 
 
-(autothemer-deftheme trans-side "Custom theme inspired by the colors of the Trans Flag."
+(autothemer-deftheme TransSide "Custom theme inspired by the colors of the Trans Flag."
  
 		     ;; Specify the color classes used by the theme
 		     ((((class color) (min-colors #xFFFFFF)))
@@ -30,15 +30,15 @@
 
 		      ;;lights
 		      (pink-light "#ff81b8")
-		      (blue-light "#3bd6ff")
-		      (aqua-light "#00ddf4")
+		      (blue-light "#53D8FF")
+		      (aqua-light "#30E0F4")
 		      (purple-light "#d5b8ff")
 		      (magenta-light "#ffa7f6")
 		      (blue2-light "#93c9ff")
 
 		      ;;light alt
 		      (pink-light-alt "#e85e8a")
-		      (aqua-light-alt "#00d3ff")
+		      (aqua-light-alt "#00FDFF")
 
 		      ;;Alt grays and dark's
 		      (mygray1 "#f8f8f8")
@@ -101,7 +101,7 @@
 		      ;;(highlight (:background background-standout2 :foreground bg-black :weight 'normal))
 		      (highlight (:foreground standout :background bg-main))
 		      (lazy-highlight (:background fg-gray))
-		      (region (:foreground mygray2-dark :background mygray1))
+		      (region (:foreground mygray1 :background pink-light-alt))
 
 		      ;;more basic things!!
 		      (bold (:weight 'bold :foreground standout))
@@ -274,7 +274,7 @@
                   (file-name-as-directory
                    (file-name-directory load-file-name))))
 
-(provide-theme 'trans-side)
+(provide-theme 'TransSide)
 
 ;; Local Variables:
 ;; eval: (rainbow-mode)

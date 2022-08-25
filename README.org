@@ -28,7 +28,7 @@ I've found most themes, especially dark themes have always come /close/ to what 
 
 then load the theme by adding this.
    #+begin_src elisp
-    (load-theme 'trans-side t)
+    (load-theme 'TransSide t)
    #+end_src
 
    If it doesn't work, consider installing autothemer from melpa first :/
