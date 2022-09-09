@@ -12,7 +12,7 @@
 		      ;; Specify the color palette for each of the classes above.
 		      ;;basic bg/fg colors
 		      (bg-main "#00000f")
-		      (bg-black "#080808")
+		      (bg-black "#0f0f2f")
 		      (bg-dark "#303030")
 		      (bg-dark2 "#1f1f1f")		      
 		      (bg-gray "#c6c6c6")
@@ -21,19 +21,12 @@
 		      (fg-gray "#919191")
 
 		      ;;dark's
-		      (pink-dark "#a43261")
-		      (blue-dark "#006ca5")
 		      (aqua-dark "#007086")
-		      (purple-dark "#6751a6")
-		      (magenta-dark "#913e88")
-		      (blue2-dark "#0061b1")
+		      (purple-dark "#6A53AE")
 
 		      ;;lights
 		      (pink-light "#ff81b8")
-		      (blue-light "#53D8FF")
 		      (aqua-light "#30E0F4")
-		      (purple-light "#d5b8ff")
-		      (magenta-light "#ffa7f6")
 		      (blue2-light "#93c9ff")
 
 		      ;;light alt
@@ -50,14 +43,14 @@
 		      (level1 "#FF619D")
 		      (level2 "#00ccFF")
 		      (level3 "#8368D5")
-		      (level4 "#00eeff")
-		      (level5 "#F561FF")
-		      (level6 "#00FCEE")
-		      (level7 "#6B62E2")
-		      (level8 "#00FF75")
+		      (level4 "#35D7E5")
+		      (level5 "#FF91BA")
+		      (level6 "#21CFFC")
+		      (level7 "#6B53AE")
+		      (level8 "#2CB3BE")
 
 		      ;;Alternate Palate
-		      (pastel-blue "#7eb8da")
+		      (pastel-blue "#7eb8fa")
 		      (pastel-aqua "#92ddea")
 		      (pastel-pink "#ffa5d8")
 		      (pastel-lilac "#be9ddf")
@@ -68,40 +61,43 @@
 				      
 		      ;;Warning, comment, and other miscellanious colors
 		      (builtin "#8C73ED")
-		      (comment "#37465f")
+		      (comment "#536Aaa")
 		      (warning "#ff0069")
+		      (docstr "#C0AED8")
 
 		      (background-standout1 "#37FF00")
-		      (background-standout2 "#006AFF"))
+		      (background-standout2 "#006AFF")
+
+		      (mode-line-no-1 "#3f2f6f")
+		      (mode-line-no-2 "#59419D")
+
+		      )
 		     
 		     ;; specifications for Emacs faces.
 		     
 		     (;; Default faces. Most commonly seen, used and inherited.
 		      (default (:foreground fg-white :background bg-main))
-		      ;; (default (:font "DejaVu Sans Mono" :foreground fg-white :background bg-main :height 160))
+
 		      (font-lock-builtin-face (:foreground builtin))
 		      (font-lock-comment-face (:foreground comment))
-		      (font-lock-doc-face (:foreground purple-dark))
+		      (font-lock-doc-face (:foreground docstr))
 		      (font-lock-keyword-face (:foreground pastel-lilac :bold t))
 		      (font-lock-negation-char-face (:foreground purple-dark))
 		      (font-lock-string-face (:foreground pink-light-alt))
 		      (font-lock-type-face (:foreground pink-light))
-		      
-		      (font-lock-function-name-face (:foreground aqua-light))
+     		      (font-lock-function-name-face (:foreground aqua-light))
 		      (font-lock-variable-name-face (:foreground aqua-light-alt))
 		      (font-lock-constant-face (:foreground pastel-violet))
-		      
 		      (font-lock-warning-face (:foreground warning))
 
 		      ;;Other basic things
 		      (scroll-bar nil)
 		      (border nil)
-		      (cursor (:background fg-gray))
+		      (cursor (:background pink-light-alt :foreground mygray2-dark))
 		      (fringe (:background bg-main))
-		      ;;(highlight (:background background-standout2 :foreground bg-black :weight 'normal))
-		      (highlight (:foreground standout :background bg-main))
+		      (highlight (:foreground mygray2-dark :background pink-light-alt))
 		      (lazy-highlight (:background fg-gray))
-		      (region (:foreground mygray1 :background pink-light-alt))
+		      (region (:foreground mygray2-dark :background pink-light-alt))
 
 		      ;;more basic things!!
 		      (bold (:weight 'bold :foreground standout))
@@ -127,12 +123,12 @@
 		      (org-date (:foreground blue2-light :underline nil))
 		      (org-footnote (:foreground mygray1-dark :underline t))
 		      (org-link (:foreground pastel-blue :underline t))
-		      (org-special-keyword (:foreground blue2-dark))
-		      (org-quote (:inherit 'org-block :slant 'italic))
-		      (org-verse (:inherit 'org-block :slant 'italic))
+		      (org-special-keyword (:foreground pastel-blue))
 		      
-		      (org-todo (:foreground magenta-light :bold t :box nil))
-		      (org-done (:foreground blue-light :bold t :box nil))
+		      (org-todo (:foreground pastel-pink :bold t :box nil))
+		      (org-done (:foreground blue2-light :bold t :box nil))
+
+		      (org-headline-done (:foreground aqua-dark))
 		      
 		      (org-warning (:foreground warning :underline t))
 		      (org-agenda-structure (:foreground mygray1-dark :background bg-dark :weight 'bold :box (:color bg-gray) ))
@@ -142,7 +138,7 @@
 		      (org-agenda-structure (:foreground aqua-light-alt :height 1.1))
 		      (org-agenda-done (:foreground mygray2 :height 1.1))
 		      (org-scheduled (:foreground pink-light))
-		      (org-scheduled-today (:foreground magenta-dark))
+		      (org-scheduled-today (:foreground purple-dark))
 		      (org-ellipsis (:foreground builtin))
 		      (org-varbatim (:foreground bg-gray))
 		      (org-document-info-keyword (:foreground pastel-lilac :height 1.5))
@@ -158,9 +154,12 @@
 		      (org-level-7 (:inherit 'outline-7 :weight 'normal))
 		      (org-level-8 (:inherit 'outline-8 :weight 'normal))
 
-		      (org-block (:background "#020012"))
-		      (org-block-begin-line (:inherit 'font-lock-comment-face :background "#120022"))
+		      (org-block (:background "#00001f"))
+		      (org-block-begin-line (:inherit 'font-lock-comment-face :background bg-black :box (:color pastel-violet)))
 		      (org-block-end-line (:inherit 'org-block-begin-line))
+		      
+		      (org-quote (:inherit 'org-block :slant 'italic))
+		      (org-verse (:inherit 'org-block :slant 'italic))
 
 		      ;;Rainbow delimiters
 		      (rainbow-delimiters-depth-1-face (:foreground fg-white :inherit 'rainbow-delimiters-base-face))
@@ -189,24 +188,21 @@
 
 		      ;;latex faces
 		      (font-latex-math-face (:foreground standout :weight 'semi-bold))
-
+		      (font-latex-sectioning-2-face (:height 2.0 :foreground blue2-light))
+		      
 		      ;;Company
-		      (company-tooltip (:foreground bg-main :background fg-white))
-		      (company-tooltip-selection (:background pastel-pink))
-		      (company-template-field (:foreground bg-main :background fg-white))
-		      (company-tooltip-search (:inherit 'highlight))
-		      (company-tooltip-search-selection (:inherit 'highlight))
-		      (company-tooltip-mouse (:inherit 'highlight))
-		      (company-echo-common (:foreground warning))
-		      (company-tooltip-common (:foreground warning))
-		      (company-tooltip-common-selection (:inherit 'company-tooltip-common))
-		      (company-tooltip-annotation (:foreground bg-black))
-		      (company-tooltip-annotation-selection (:inherit 'company-tooltip-annotation))
-		      (company-scrollbar-fg (:background warning))
-		      (company-scrollbar-bg (:background mygray1-dark))
-		      (company-preview (:foreground mygray1-dark :background aqua-dark))
-		      (company-preview-common (:foreground warning :inherit 'company-preview))
-		      (company-preview-search (:background blue2-dark :inherit 'company-preview))
+		      (company-tooltip (:foreground mygray1 :background bg-black :box (:color pastel-violet)))
+		      (company-tooltip-selection (:foreground mygray2-dark :background pink-light-alt))
+		      (company-tooltip-search (:foreground mygray1))
+		      (company-tooltip-search-selection (:foreground mygray2-dark :background pink-light-alt))
+		      (company-echo-common (:foreground mygray1))
+		      (company-tooltip-common (:foreground mygray1))
+		      (company-tooltip-annotation (:foreground mygray1))
+		      (company-scrollbar-fg nil)
+		      (company-scrollbar-bg (:background bg-main))
+		      (company-preview (:foreground mygray2-dark :background pink-light-alt))
+		      (company-preview-common (:inherit 'company-preview))
+		      (company-preview-search (:background bg-main :foreground mygray1))
 		      (company-echo nil)
 
 		      ;;Avy and Ace-Window
@@ -217,39 +213,14 @@
 		      
 		      (aw-leading-char-face (:height 2.0 :foreground warning))
 
-		      ;;Ivy.
-		      (ivy-match-required-face (:foreground warning :inherit 'minibuffer-prompt))
-		      (ivy-confirm-face (:foreground pastel-lilac :inherit 'minibuffer-prompt))
-		      (ivy-minibuffer-match-face-4 (:inherit 'ivy-minibuffer-match-face-2))
-		      (ivy-minibuffer-match-face-3 (:inherit 'ivy-minibuffer-match-face-2))
-		      (ivy-minibuffer-match-face-2 (:inherit 'ivy-minibuffer-match-face-1))
-		      (ivy-minibuffer-match-face-1 (:weight 'bold :foreground warning))
-		      (ivy-minibuffer-match-highlight (:inherit 'highlight))
-		      (ivy-current-match (:inherit 'highlight))
-		      (ivy-cursor (:inherit 'highlight))
-
-		      ;;Swiper
-		      (swiper-line-face (:inherit 'highlight))
-		      (swiper-background-match-face-4 (:inherit 'swiper-match-face-4))
-		      (swiper-background-match-face-3 (:inherit 'swiper-match-face-3))
-		      (swiper-background-match-face-2 (:inherit 'swiper-match-face-2))
-		      (swiper-background-match-face-1 (:inherit 'swiper-match-face-1))
-		      (swiper-match-face-4 (:inherit 'isearch-fail))
-		      (swiper-match-face-3 (:inherit 'match))
-		      (swiper-match-face-2 (:inherit 'isearch))
-		      (swiper-match-face-1 (:inherit 'lazy-highlight))
-
-		      ;;Counsel.
-		      (counsel-key-binding (:inherit 'font-lock-keyword-face))
-
 		      ;;Modeline-general.
 		      (mode-line (:foreground fg-white :background purple-dark))
-		      (mode-line-inactive (:foreground mygray1-dark :background magenta-dark))
+		      (mode-line-inactive (:foreground mygray1-dark :background mode-line-no-1))
 		      
 		      ;;Nano modeline.
 		      (nano-modeline-inactive-status-** (:inherit 'mode-line-inactive  :background pastel-blue :foreground bg-black))
-		      (nano-modeline-inactive-status-RW (:inherit 'mode-line-inactive  :background pink-dark))
-		      (nano-modeline-inactive-status-RO (:inherit 'mode-line-inactive  :background pink-dark))
+		      (nano-modeline-inactive-status-RW (:inherit 'mode-line-inactive  :background mode-line-no-2))
+		      (nano-modeline-inactive-status-RO (:inherit 'mode-line-inactive  :background mode-line-no-2))
 		      (nano-modeline-inactive-secondary (:inherit 'mode-line-inactive))
 		      (nano-modeline-inactive-primary (:inherit 'mode-line-inactive))
 		      (nano-modeline-inactive-name (:inherit 'mode-line-inactive))
@@ -262,6 +233,20 @@
 		      (nano-modeline-active-primary (:inherit ('mode-line 'italic)))
 		      (nano-modeline-active-name (:inherit ('mode-line 'bold)))
 		      (nano-modeline-active (:inherit 'mode-line))
+
+		      ;;Ivy
+		      (ivy-current-match (:extend t :foreground mygray2-dark :background pink-light-alt))
+		      (ivy-minibuffer-match-highlight (:inherit 'highlight))
+		      (ivy-minibuffer-match-face-1 (:weight 'bold :inherit 'ivy-current-match))
+		      (ivy-minibuffer-match-face-2 (:weight 'bold :background pastel-lilac))
+		      (ivy-minibuffer-match-face-3 (:weight 'bold :background pastel-pink))
+		      (ivy-minibuffer-match-face-4 (:weight 'bold :background pastel-violet))
+
+		      ;;Swiper
+		      (swiper-match-face-1 (:weight 'bold :inherit 'highlight))
+		      (swiper-match-face-2 (:weight 'bold :background pastel-lilac :foreground mygray2-dark))
+		      (swiper-match-face-3 (:weight 'bold :background pastel-pink :foreground mygray2-dark))
+		      (swiper-match-face-4 (:weight 'bold :background pastel-violet :foreground mygray2-dark))
 
 		      )
 		     ;; Forms after the face specifications are evaluated.

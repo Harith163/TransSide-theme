@@ -11,7 +11,9 @@
 #+creator: Emacs 26.3 (Org mode 9.3.6)
 
 * This is a top level heading
-  Hey Look, some text!! Isn't this cool?? [[file:Showcase.org::This is a top level heading][Org-links look like this]] . Highlighted regions look like this
+  Hey Look, some text!! Isn't this cool?? [[file:Showcase.org::This is a top level heading][Org-links look like this]] . Highlighted regions look like this.
+
+  # Comments look like this
   
 ** This is a level 2 heading.
    This is what a code block looks like in org mode.
@@ -19,6 +21,10 @@
      (defvar 'my/Dummy)
 
      (setq my/Dummy "This is what emacs-lisp looks like")
+
+     (defun test (1 2 3)
+            "This is a docstring"
+            (some-function '1 '2 '3))
    #+end_src
 
 *** Wonder what a level 3 heading looks like?
@@ -65,7 +71,7 @@
      
 ***** MORE LEVELS
 ****** EEEEEEE
-******* COLORS
-******** NEON
-******** OOH 
-******** AAHH
+******* ☛TODO NEON
+SCHEDULED: <2022-09-09 Fri>
+******* ✔DONE OOH 
+******* ❌CANCELED AAHH
