@@ -19,6 +19,7 @@
 		      (fg-white "#FFFFFF")
 		      (fg-dark "#5e5e5e")
 		      (fg-gray "#919191")
+		      (fg-text "#ffe1ff")
 
 		      ;;dark's
 		      (aqua-dark "#007086")
@@ -76,7 +77,7 @@
 		     ;; specifications for Emacs faces.
 		     
 		     (;; Default faces. Most commonly seen, used and inherited.
-		      (default (:foreground fg-white :background bg-main))
+		      (default (:foreground fg-text :background bg-main))
 
 		      (font-lock-builtin-face (:foreground builtin))
 		      (font-lock-comment-face (:foreground comment))
@@ -98,6 +99,7 @@
 		      (highlight (:foreground mygray2-dark :background pink-light-alt))
 		      (lazy-highlight (:background fg-gray))
 		      (region (:foreground mygray2-dark :background pink-light-alt))
+		      (link (:foreground pastel-blue :underline t))
 
 		      ;;more basic things!!
 		      (bold (:weight 'bold :foreground standout))
@@ -122,13 +124,13 @@
 		      (org-hide (:foreground bg-main))
 		      (org-date (:foreground blue2-light :underline nil))
 		      (org-footnote (:foreground mygray1-dark :underline t))
-		      (org-link (:foreground pastel-blue :underline t))
+		      (org-link (:inherit 'link))
 		      (org-special-keyword (:foreground pastel-blue))
 		      
 		      (org-todo (:foreground pastel-pink :bold t :box nil))
 		      (org-done (:foreground blue2-light :bold t :box nil))
 
-		      (org-headline-done (:foreground aqua-dark))
+		      (org-headline-done (:foreground pastel-aqua))
 		      
 		      (org-warning (:foreground warning :underline t))
 		      (org-agenda-structure (:foreground mygray1-dark :background bg-dark :weight 'bold :box (:color bg-gray) ))
@@ -238,16 +240,38 @@
 		      (ivy-current-match (:extend t :foreground mygray2-dark :background pink-light-alt))
 		      (ivy-minibuffer-match-highlight (:inherit 'highlight))
 		      (ivy-minibuffer-match-face-1 (:weight 'bold :inherit 'ivy-current-match))
-		      (ivy-minibuffer-match-face-2 (:weight 'bold :background pastel-lilac))
-		      (ivy-minibuffer-match-face-3 (:weight 'bold :background pastel-pink))
-		      (ivy-minibuffer-match-face-4 (:weight 'bold :background pastel-violet))
+		      (ivy-minibuffer-match-face-2 (:weight 'bold :foreground standout))
+		      (ivy-minibuffer-match-face-3 (:weight 'bold :foreground standout))
+		      (ivy-minibuffer-match-face-4 (:weight 'bold :foreground standout))
 
 		      ;;Swiper
 		      (swiper-match-face-1 (:weight 'bold :inherit 'highlight))
-		      (swiper-match-face-2 (:weight 'bold :background pastel-lilac :foreground mygray2-dark))
-		      (swiper-match-face-3 (:weight 'bold :background pastel-pink :foreground mygray2-dark))
-		      (swiper-match-face-4 (:weight 'bold :background pastel-violet :foreground mygray2-dark))
+		      (swiper-match-face-2 (:weight 'bold :foreground standout))
+		      (swiper-match-face-3 (:weight 'bold :foreground standout))
+		      (swiper-match-face-4 (:weight 'bold :foreground standout))
 
+		      ;;mu4e
+		      (mu4e-unread-face (:weight 'bold :foreground pastel-blue))
+		      (mu4e-trashed-face (:strike-through t :foreground mygray2))
+		      (mu4e-draft-face (:foreground mygray1-dark))
+		      (mu4e-flagged-face (:weight 'bold :foreground standout))
+		      (mu4e-replied-face (:weight 'normal :slant 'normal :foreground purple-dark))
+		      (mu4e-forwarded-face (:weight 'normal :slant 'normal :foreground pastel-violet))
+
+		      (mu4e-header-face (:inherit 'default))
+		      (mu4e-related-face (:slant 'italic :inherit 'default))
+		      (mu4e-header-title-face (:foreground pastel-lilac))
+		      (mu4e-header-highlight-face (:weight 'bold :underline t :extend t :inherit 'highlight))
+		      (mu4e-header-key-face (:weight 'bold :foreground aqua-light))
+		      (mu4e-header-value-face (:foreground blue2-light))
+		      (mu4e-special-header-value-face (:foreground pink-light))
+
+		      (mu4e-link-face (:inherit 'link))
+		      (mu4e-highlight-face (:inherit 'highlight))
+		      (mu4e-title-face (:weight 'bold :foreground pink-light))
+		      (mu4e-warning-face (:weight 'bold :slant 'normal :inherit 'font-lock-warning-face))
+		      
+		      
 		      )
 		     ;; Forms after the face specifications are evaluated.
 		     ;; (palette vars can be used, read below for details.)
