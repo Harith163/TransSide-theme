@@ -14,6 +14,8 @@
   Hey Look, some text!! Isn't this cool?? [[file:Showcase.org::This is a top level heading][Org-links look like this]] . Highlighted regions look like this.
 
   # Comments look like this
+
+  $This is a math face$
   
 ** This is a level 2 heading.
    This is what a code block looks like in org mode.
