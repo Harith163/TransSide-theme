@@ -101,7 +101,7 @@
 		      (highlight (:foreground gray-alt-dark :background pink-alt))
 		      (region (:foreground gray-alt-dark :background pink-alt))
 
-		      (link (:foreground pastel-blue :underline t))
+		      (link (:foreground pastel-pink :underline t))
 
 		      ;;more basic things!!
 		      (bold (:weight 'bold :foreground standout))
@@ -160,7 +160,7 @@
 
 		      (org-special-keyword (:inherit 'font-lock-keyword-face))
 
-		      (org-footnote (:underline t :foreground pastel-pink))
+		      (org-footnote (:inherit 'link))
 
 		      (org-checkbox (:inherit 'bold :foreground pastel-pink))
 		      (org-checkbox-statistics-todo (:inherit 'org-todo))
