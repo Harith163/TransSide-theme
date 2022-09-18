@@ -17,7 +17,7 @@
 		      (fg-text "#ffe1ff")
 
 		      ;;Pinks & Blues
-		      (pink "#e85e8a")
+		      (pink "#e86f8a")
 		      (blue "#11bcFF")
 
 		      (pink-alt "#ff81b8")
@@ -26,7 +26,7 @@
 		      (pink-dimmed "#c83e6a")
 		      (blue-dimmed "#118cdc")
 
-		      (pink-alt-dimmed "#cf5198")
+		      (pink-alt-dimmed "#df6f9f")
 		      (blue-alt-dimmed "#73a9dd")
 
 		      ;;Purples & Violets
@@ -37,7 +37,7 @@
 		      (purple-alt-dimmed "#493b80")
 
 		      ;;Alternate Palate
-		      (pastel-blue "#7eb8fa")
+		      (pastel-blue "#5ec8fa")
 		      (pastel-aqua "#92ddea")
 		      (pastel-pink "#ffa5d8")
 		      (pastel-lilac "#be9ddf")
@@ -54,18 +54,18 @@
 		      (level1 "#FF619D")
 		      (level2 "#00ccFF")
 		      (level3 "#8368D5")
-		      (level4 "#35D7E5")
+		      (level4 "#35a7f5")
 		      (level5 "#FF91BA")
 		      (level6 "#21CFFC")
 		      (level7 "#6B53AE")
-		      (level8 "#2CB3BE")
+		      (level8 "#2C93fE")
 
  		      (standout "#00FF94")
 		      ;; (standout "#00AAA6")
 				      
 		      ;;Warning, comment, and other miscellanious colors
 		      (builtin "#926EBE")
-		      (comment "#536Aaa")
+		      (comment "#a88fac")
 		      (warning "#ff0069")
 		      (docstr "#dfaEf8")
 
@@ -89,7 +89,7 @@
 		      (font-lock-type-face (:foreground purple-alt))
      		      (font-lock-function-name-face (:foreground blue))
 		      (font-lock-variable-name-face (:foreground blue-alt))
-		      (font-lock-constant-face (:foreground purple))
+		      (font-lock-constant-face (:foreground blue-alt))
 		      
 
 		      ;;Other basic things
@@ -131,11 +131,11 @@
 		      (outline-8 (:foreground level8))
 
 		      ;;Org-mode stuff
-		      (org-todo (:weight 'bold :box nil :foreground pastel-lilac))
+		      (org-todo (:weight 'bold :box nil :foreground purple-alt))
 		      (org-done (:weight 'bold :box nil :foreground pastel-violet))
 
-		      (org-headline-todo (:foreground purple-alt))
-		      (org-headline-done (:foreground purple))
+		      (org-headline-todo (:foreground pink-alt))
+		      (org-headline-done (:foreground blue-alt))
 
 		      (org-priority (:inherit 'font-lock-keyword-face))
 
@@ -187,6 +187,8 @@
 
 		      (org-time-grid (:foreground purple-alt-dimmed))
 
+		      (org-ellipses (:foreground purple))
+
 		      ;;font-latex
 		      (font-latex-math-face (:inherit 'bold :foreground pink-alt))
 
@@ -227,22 +229,22 @@
 		      (aw-leading-char-face (:height 2.0 :foreground warning))
 		      (aw-background-face (:foreground purple-dimmed))
 
-		      ;;Modeline-general.
+		      ;;Mode-line-general.
 		      (mode-line (:foreground fg-white :background purple))
 		      (mode-line-inactive (:foreground gray-dark :background purple-dimmed))
 		      
 		      ;;Nano modeline.
-		      (nano-modeline-inactive-status-** (:inherit 'mode-line-inactive  :background pastel-blue :foreground bg-black))
-		      (nano-modeline-inactive-status-RW (:inherit 'mode-line-inactive  :background purple-alt-dimmed))
-		      (nano-modeline-inactive-status-RO (:inherit 'mode-line-inactive  :background purple-alt-dimmed))
+		      (nano-modeline-inactive-status-** (:inherit 'mode-line-inactive  :background pastel-blue :foreground gray-alt-dark))
+		      (nano-modeline-inactive-status-RW (:inherit 'mode-line-inactive  :background purple-alt-dimmed :foreground gray-alt-dark))
+		      (nano-modeline-inactive-status-RO (:inherit 'mode-line-inactive  :background purple-alt-dimmed :foreground gray-alt-dark))
 		      (nano-modeline-inactive-secondary (:inherit 'mode-line-inactive))
 		      (nano-modeline-inactive-primary (:inherit 'mode-line-inactive))
 		      (nano-modeline-inactive-name (:inherit 'mode-line-inactive))
 		      (nano-modeline-inactive (:inherit 'mode-line-inactive))
 		      
-		      (nano-modeline-active-status-** (:inherit 'mode-line  :background pastel-aqua :foreground bg-black))
-		      (nano-modeline-active-status-RW (:inherit 'mode-line :background purple-alt))
-		      (nano-modeline-active-status-RO (:inherit 'mode-line :background purple-alt))
+		      (nano-modeline-active-status-** (:inherit 'mode-line  :background pastel-aqua :foreground gray-alt-dark))
+		      (nano-modeline-active-status-RW (:inherit 'mode-line :background purple-alt :foreground gray-alt-dark))
+		      (nano-modeline-active-status-RO (:inherit 'mode-line :background purple-alt :foreground gray-alt-dark))
 		      (nano-modeline-active-secondary (:inherit ('mode-line 'italic)))
 		      (nano-modeline-active-primary (:inherit ('mode-line 'italic)))
 		      (nano-modeline-active-name (:inherit ('mode-line 'bold)))
@@ -263,6 +265,44 @@
 		      (swiper-match-face-4 (:weight 'bold :foreground standout))
 
 		      ;;mu4e
+		      (mu4e-unread-face (:weight 'bold :foreground pastel-pink))
+		      (mu4e-trashed-face (:strike-through t :foreground purple-alt-dimmed))
+		      (mu4e-draft-face (:foreground pink-alt-dimmed))
+		      (mu4e-flagged-face (:weight 'bold :foreground purple-alt))
+		      (mu4e-replied-face (:weight 'normal :slant 'normal :foreground blue-alt))
+		      (mu4e-forwarded-face (:weight 'normal :slant 'normal :foreground blue-alt-dimmed))
+		      
+		      (mu4e-header-face (:foreground pastel-violet))
+		      (mu4e-header-title-face (:foreground pastel-lilac))
+		      (mu4e-header-highlight-face (:weight 'bold :underline t :extend t :inherit 'highlight))
+		      (mu4e-header-marks-face (:inherit 'font-lock-preprocessor-face))
+		      (mu4e-header-key-face (:weight 'bold :foreground blue))
+		      (mu4e-header-value-face (:foreground blue-alt))
+		      (mu4e-special-header-value-face (:foreground blue-alt))
+		      
+		      (mu4e-related-face (:slant 'italic :inherit 'default))
+		      		      
+		      (mu4e-link-face (:inherit 'link))
+		      (mu4e-contact-face (:inherit 'font-lock-variable-name-face))
+		      (mu4e-highlight-face (:foreground pink-alt))
+		      (mu4e-title-face (:weight 'bold :foreground purple-alt))
+		     
+		      (mu4e-url-number-face (:weight 'bold :inherit 'link))
+
+		      ;;gnus
+		      (gnus-header-from (:foreground blue-alt))
+		      (gnus-header-subject (:foreground blue-alt))
+		      (gnus-header-name (:foreground purple-alt))
+		      (gnus-header-content (:slant 'italic :foreground blue))
+
+		      ;;message
+		      (message-separator (:weight 'bold :foreground comment))
+		      (message-header-to (:weight 'bold :foreground blue))
+		      (message-header-cc (:weight 'bold :foreground blue-alt))
+		      (message-header-subject (:foreground pink-alt))
+		      (message-header-other (:foreground blue-alt))
+		      (message-header-name (:foreground purple-alt))
+
 		      )
 		     ;; Forms after the face specifications are evaluated.
 		     ;; (palette vars can be used, read below for details.)
