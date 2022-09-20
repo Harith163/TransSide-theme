@@ -64,7 +64,7 @@
 		      ;; (standout "#00AAA6")
 				      
 		      ;;Warning, comment, and other miscellanious colors
-		      (builtin "#926EBE")
+		      (builtin "#Bf7fBf")
 		      (comment "#a88fac")
 		      (warning "#ff0069")
 		      (docstr "#dfaEf8")
@@ -111,7 +111,7 @@
 		      (linum (:height 0.85 :inherit '(shadow default)))
 		      (linum-relative-current-face (:weight 'bold :foreground blue :background bg-main :inherit 'linum))
 		      (line-number (:inherit ('shadow 'default)))
-		      (line-number-current-line (:inherit 'line-number))
+		      (line-number-current-line (:inherit 'linum-relative-current-face))
 
 		      ;;iSearch
 		      (isearch (:weight 'bold :inherit 'highlight))
@@ -302,6 +302,16 @@
 		      (message-header-subject (:foreground pink-alt))
 		      (message-header-other (:foreground blue-alt))
 		      (message-header-name (:foreground purple-alt))
+
+		      ;;elfeed
+		      (elfeed-search-date-face (:foreground pastel-lilac))
+		      (elfeed-search-title-face (:foreground purple-alt :weight 'bold))
+		      (elfeed-search-unread-title-face (:weight 'bold :foreground pastel-pink))
+		      (elfeed-search-feed-face (:foreground blue))
+		      (elfeed-search-tag-face (:foreground pastel-blue))
+		      (elfeed-search-last-update-face nil)
+		      (elfeed-search-unread-count-face (:inherit 'default))
+		      (elfeed-search-filter-face (:foreground purple))
 
 		      )
 		     ;; Forms after the face specifications are evaluated.
