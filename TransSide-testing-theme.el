@@ -289,6 +289,22 @@
 		     
 		      (mu4e-url-number-face (:weight 'bold :inherit 'link))
 
+		      ;;mu4e-column-faces
+		      (mu4e-column-faces-thread-subject (:inherit 'font-lock-doc-face))
+		      (mu4e-column-faces-to-from (:inherit 'font-lock-variable-name-face))
+		      (mu4e-column-faces-date (:inherit 'font-lock-string-face))
+		      (mu4e-column-faces-flags (:inherit 'font-lock-type-face))
+		      (mu4e-column-faces-tags (:inherit 'font-lock-keyword-face))
+		      (mu4e-column-faces-mailing-list (:inherit 'font-lock-builtin-face))
+		      (mu4e-column-faces-maildir (:inherit 'font-lock-function-name-face))
+		      (mu4e-column-faces-message-id (:inherit 'font-lock-keyword-face))
+		      (mu4e-column-faces-attachments (:inherit 'font-lock-constant-face))
+		      (mu4e-column-faces-signature (:inherit 'font-lock-preprocessor-face))
+		      (mu4e-column-faces-decryption (:inherit 'font-lock-keyword-face))
+		      (mu4e-column-faces-size (:inherit 'font-lock-string-face))
+		      (mu4e-column-faces-thead-subject (:inherit 'font-lock-type-face))
+		      (mu4e-column-faces-user-agent (:inherit 'font-lock-doc-face))
+
 		      ;;gnus
 		      (gnus-header-from (:foreground blue-alt))
 		      (gnus-header-subject (:foreground blue-alt))
@@ -305,7 +321,7 @@
 
 		      ;;elfeed
 		      (elfeed-search-date-face (:foreground pastel-lilac))
-		      (elfeed-search-title-face (:foreground purple-alt :weight 'bold))
+		      (elfeed-search-title-face (:foreground pastel-violet :weight 'normal))
 		      (elfeed-search-unread-title-face (:weight 'bold :foreground pastel-pink))
 		      (elfeed-search-feed-face (:foreground blue))
 		      (elfeed-search-tag-face (:foreground pastel-blue))
