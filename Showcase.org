@@ -11,7 +11,7 @@
 #+creator: Emacs 26.3 (Org mode 9.3.6)
 
 * This is a top level heading
-  Hey Look, some text!! Isn't this cool?? [[file:Showcase.org::This is a top level heading][Org-links look like this]] . Highlighted regions look like this.
+  Hey Look, some text!! Isn't this cool?? [[file:Showcase.org::This is a top level heading][Org-links look like this]]. Highlighted regions look like this.
 
   # Comments look like this
 

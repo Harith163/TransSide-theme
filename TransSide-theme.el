@@ -191,6 +191,21 @@
 
 		      ;;font-latex
 		      (font-latex-math-face (:inherit 'bold :foreground pink-alt))
+		      (font-latex-sectioning-5-face (:weight 'bold :foreground blue-alt :inherit 'variable-pitch))
+		      (font-latex-sectioning-4-face (:height 1.1 :inherit 'font-latex-sectioning-5-face))
+		      (font-latex-sectioning-3-face (:height 1.1 :inherit 'font-latex-sectioning-4-face))
+		      (font-latex-sectioning-2-face (:height 1.1 :inherit 'font-latex-sectioning-3-face))
+		      (font-latex-sectioning-1-face (:height 1.1 :inherit 'font-latex-sectioning-2-face))
+		      (font-latex-sectioning-0-face (:height 1.1 :inherit 'font-latex-sectioning-1-face))
+		      (font-latex-bold-face (:inherit 'bold))
+		      (font-latex-italic-face (:inherit 'italic))
+		      (font-latex-underline-face (:inherit 'underline))
+		      (font-latex-string-face (:inherit 'font-lock-string-face))
+		      (font-latex-warning-face (:foreground warning :inherit 'bold))
+		      (font-latex-verbatim-face (:foreground pastel-lilac))
+		      (font-latex-slide-title-face (:height 1.2 :weight 'bold :inherit 'variable-pitch :foreground purple-alt))
+		      (font-latex-doctex-documentation-face (:foreground docstr))
+
 
 		      ;;Rainbow delimiters
 		      (rainbow-delimiters-depth-1-face (:foreground fg-white :inherit 'rainbow-delimiters-base-face))

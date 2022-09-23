@@ -4,9 +4,12 @@
 I've found most themes, especially dark themes have always come /close/ to what I've needed but for one reason or the other fallen short of my expectations. I'm working on my own theme(s) that are better. Once I feel like its kinda ready, I'll maybe? put it on melpa/elpa
 
 [[screenshot-1.png]]
+[[screenshot-2.png]]
+[[screenshot-3.png]]
+[[screenshot-4.png]]
 
 * Things to work on.
-** ☛TODO Ideological things 
+** ✔DONE Ideological things 
 *** Learn color theory
 *** Work on color consistency
 
@@ -20,6 +23,7 @@ I've found most themes, especially dark themes have always come /close/ to what 
    + Elfeed
    + Mu4e
    + Mu4e Column Faces
+   + Latex
      
 * Trans-Side
   To use this theme, first clone this repo/copy this theme into a custom theme folder. Then add this line to your init.el file to tell emacs to add that folder to its path.
