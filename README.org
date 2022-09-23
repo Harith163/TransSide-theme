@@ -11,13 +11,15 @@ I've found most themes, especially dark themes have always come /close/ to what 
 *** Work on color consistency
 
 ** Mode supported
-   + Basic Org mode
-   + Basic Latex
+   + Org mode
    + NANO modeline
    + Company
    + Rainbow delimiters
    + Avy and Ace Window
    + Ivy and it's siblings (ish)
+   + Elfeed
+   + Mu4e
+   + Mu4e Column Faces
      
 * Trans-Side
   To use this theme, first clone this repo/copy this theme into a custom theme folder. Then add this line to your init.el file to tell emacs to add that folder to its path.

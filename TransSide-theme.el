@@ -13,65 +13,65 @@
 		      ;;basic bg/fg colors
 		      (bg-main "#00000f")
 		      (bg-black "#0f0f2f")
-		      (bg-dark "#303030")
-		      (bg-dark2 "#1f1f1f")		      
-		      (bg-gray "#c6c6c6")
 		      (fg-white "#FFFFFF")
-		      (fg-dark "#5e5e5e")
-		      (fg-gray "#919191")
 		      (fg-text "#ffe1ff")
 
-		      ;;dark's
-		      (aqua-dark "#007086")
-		      (purple-dark "#6A53AE")
+		      ;;Pinks & Blues
+		      (pink "#e86f8a")
+		      (blue "#11bcFF")
 
-		      ;;lights
-		      (pink-light "#ff81b8")
-		      (aqua-light "#30E0F4")
-		      (blue2-light "#93c9ff")
+		      (pink-alt "#ff81b8")
+		      (blue-alt "#53b9ff")
 
-		      ;;light alt
-		      (pink-light-alt "#e85e8a")
-		      (aqua-light-alt "#00FDFF")
+		      (pink-dimmed "#c83e6a")
+		      (blue-dimmed "#118cdc")
 
-		      ;;Alt grays and dark's
-		      (mygray1 "#f8f8f8")
-		      (mygray1-dark "#d0d0d0")
-		      (mygray2 "#3a3a3a")
-		      (mygray2-dark "#141414")
+		      (pink-alt-dimmed "#df6f9f")
+		      (blue-alt-dimmed "#73a9dd")
 
-		      ;;Level Colors
-		      (level1 "#FF619D")
-		      (level2 "#00ccFF")
-		      (level3 "#8368D5")
-		      (level4 "#35D7E5")
-		      (level5 "#FF91BA")
-		      (level6 "#21CFFC")
-		      (level7 "#6B53AE")
-		      (level8 "#2CB3BE")
+		      ;;Purples & Violets
+		      (purple "#6E58BB")
+		      (purple-alt "#b693ff")
+
+		      (purple-dimmed "#341c62")
+		      (purple-alt-dimmed "#493b80")
 
 		      ;;Alternate Palate
-		      (pastel-blue "#7eb8fa")
+		      (pastel-blue "#5ec8fa")
 		      (pastel-aqua "#92ddea")
 		      (pastel-pink "#ffa5d8")
 		      (pastel-lilac "#be9ddf")
 		      (pastel-violet "#9579d1")
 
- 		      ;; (standout "#00FF94")
-		      (standout "#00AAA6")
+
+		      ;;Alt grays and dark's
+		      (gray "#f8f8f8")
+		      (gray-dark "#d0d0d0")
+		      (gray-alt "#3a3a3a")
+		      (gray-alt-dark "#141414")
+
+		      ;;Level Colors
+		      (level1 "#FF619D")
+		      (level2 "#00ccFF")
+		      (level3 "#8368D5")
+		      (level4 "#35a7f5")
+		      (level5 "#FF91BA")
+		      (level6 "#21CFFC")
+		      (level7 "#6B53AE")
+		      (level8 "#2C93fE")
+
+ 		      (standout "#00FF94")
+		      ;; (standout "#00AAA6")
 				      
 		      ;;Warning, comment, and other miscellanious colors
-		      (builtin "#8C73ED")
-		      (comment "#536Aaa")
+		      (builtin "#Bf7fBf")
+		      (comment "#a88fac")
 		      (warning "#ff0069")
-		      (docstr "#C0AED8")
+		      (docstr "#dfaEf8")
 
 		      (background-standout1 "#37FF00")
 		      (background-standout2 "#006AFF")
-
-		      (mode-line-no-1 "#3f2f6f")
-		      (mode-line-no-2 "#59419D")
-
+		      
 		      )
 		     
 		     ;; specifications for Emacs faces.
@@ -82,71 +82,66 @@
 		      (font-lock-builtin-face (:foreground builtin))
 		      (font-lock-comment-face (:foreground comment))
 		      (font-lock-doc-face (:foreground docstr))
-		      (font-lock-keyword-face (:foreground pastel-lilac :bold t))
-		      (font-lock-negation-char-face (:foreground purple-dark))
-		      (font-lock-string-face (:foreground pink-light-alt))
-		      (font-lock-type-face (:foreground pink-light))
-     		      (font-lock-function-name-face (:foreground aqua-light))
-		      (font-lock-variable-name-face (:foreground aqua-light-alt))
-		      (font-lock-constant-face (:foreground pastel-violet))
+		      (font-lock-keyword-face (:foreground purple-alt :bold t))
 		      (font-lock-warning-face (:foreground warning))
+
+		      (font-lock-string-face (:foreground pink))
+		      (font-lock-type-face (:foreground purple-alt))
+     		      (font-lock-function-name-face (:foreground blue))
+		      (font-lock-variable-name-face (:foreground blue-alt))
+		      (font-lock-constant-face (:foreground blue-alt))
+		      
 
 		      ;;Other basic things
 		      (scroll-bar nil)
 		      (border nil)
-		      (cursor (:background pink-light-alt :foreground mygray2-dark))
 		      (fringe (:background bg-main))
-		      (highlight (:foreground mygray2-dark :background pink-light-alt))
-		      (lazy-highlight (:background fg-gray))
-		      (region (:foreground mygray2-dark :background pink-light-alt))
-		      (link (:foreground pastel-blue :underline t))
+
+		      (cursor (:background pink-alt :foreground gray-alt-dark))
+		      (highlight (:foreground gray-alt-dark :background pink-alt))
+		      (region (:foreground gray-alt-dark :background pink-alt))
+
+		      (link (:foreground pastel-pink :underline t))
 
 		      ;;more basic things!!
 		      (bold (:weight 'bold :foreground standout))
 		      (warning (:weight 'bold :foreground warning))
-		      (match (:background level7))
-
+		      
 		      ;;line number mode
 		      (linum (:height 0.85 :inherit '(shadow default)))
-		      (linum-relative-current-face (:weight 'bold :foreground pastel-aqua :background mygray2 :inherit 'linum))
+		      (linum-relative-current-face (:weight 'bold :foreground blue :background bg-main :inherit 'linum))
 		      (line-number (:inherit ('shadow 'default)))
-		      (line-number-current-line (:inherit 'line-number))
+		      (line-number-current-line (:inherit 'linum-relative-current-face))
 
 		      ;;iSearch
-		      (isearch (:weight 'bold :foreground warning :background mygray2-dark))
-		      (isearch-fail (:background bg-black))
+		      (isearch (:weight 'bold :inherit 'highlight))
+		      (isearch-fail (:background bg-main :foreground warning))
 
 		      ;;Minibuffer prompt
-		      (minibuffer-prompt (:weight 'bold :foreground aqua-light))
+		      (minibuffer-prompt (:weight 'bold :foreground blue))
+
+		      ;;Outlines/Headings
+		      (outline-1 (:foreground level1))
+		      (outline-2 (:foreground level2))
+		      (outline-3 (:foreground level3))
+		      (outline-4 (:foreground level4))
+		      (outline-5 (:foreground level5))
+		      (outline-6 (:foreground level6))
+		      (outline-7 (:foreground level7))
+		      (outline-8 (:foreground level8))
 
 		      ;;Org-mode stuff
-		      (org-code (:foreground mygray1))
-		      (org-hide (:foreground bg-main))
-		      (org-date (:foreground blue2-light :underline nil))
-		      (org-footnote (:foreground mygray1-dark :underline t))
-		      (org-link (:inherit 'link))
-		      (org-special-keyword (:foreground pastel-blue))
-		      
-		      (org-todo (:foreground pastel-pink :bold t :box nil))
-		      (org-done (:foreground blue2-light :bold t :box nil))
+		      (org-todo (:weight 'bold :box nil :foreground purple-alt))
+		      (org-done (:weight 'bold :box nil :foreground pastel-violet))
 
-		      (org-headline-done (:foreground pastel-aqua))
-		      
-		      (org-warning (:foreground warning :underline t))
-		      (org-agenda-structure (:foreground mygray1-dark :background bg-dark :weight 'bold :box (:color bg-gray) ))
-		      (org-agenda-date (:foreground aqua-light-alt :height 1.1))
-		      (org-agenda-date-weekend (:foreground bg-gray :weight 'normal ))
-		      (org-agenda-date-today (:foreground aqua-light :weight 'bold :height 1.4))
-		      (org-agenda-structure (:foreground aqua-light-alt :height 1.1))
-		      (org-agenda-done (:foreground mygray2 :height 1.1))
-		      (org-scheduled (:foreground pink-light))
-		      (org-scheduled-today (:foreground purple-dark))
-		      (org-ellipsis (:foreground builtin))
-		      (org-varbatim (:foreground bg-gray))
-		      (org-document-info-keyword (:foreground pastel-lilac :height 1.5))
-		      (org-document-info (:foreground pastel-blue :height 1.5))
-		      (org-document-title (:foreground pastel-blue :weight 'bold :height 1.5 :italic t))
+		      (org-headline-todo (:foreground pink-alt))
+		      (org-headline-done (:foreground blue-alt))
 
+		      (org-priority (:inherit 'font-lock-keyword-face))
+
+		      (org-date (:underline nil :foreground pastel-blue))
+		      (org-date-selected (:inverse-video t :foreground pink))
+		      
 		      (org-level-1 (:inherit 'outline-1 :weight 'bold :height 1.3 :slant 'italic))
 		      (org-level-2 (:inherit 'outline-2 :weight 'normal :height 1.1 :slant 'italic))
 		      (org-level-3 (:inherit 'outline-3 :weight 'normal))
@@ -159,9 +154,43 @@
 		      (org-block (:background "#00001f"))
 		      (org-block-begin-line (:inherit 'font-lock-comment-face :background bg-black :box (:color pastel-violet)))
 		      (org-block-end-line (:inherit 'org-block-begin-line))
+
+		      (org-quote (:slant 'italic :inherit 'org-block))
+		      (org-verse (:slant 'italic :inherit 'org-block))
+
+		      (org-special-keyword (:inherit 'font-lock-keyword-face))
+
+		      (org-footnote (:inherit 'link))
+
+		      (org-checkbox (:inherit 'bold :foreground pastel-pink))
+		      (org-checkbox-statistics-todo (:inherit 'org-todo))
+		      (org-checkbox-statistics-done (:inherit 'org-done))
+
+		      (org-document-title (:height 1.5 :weight 'bold :slant 'italic :foreground blue-alt))
+		      (org-document-info (:height 1.5 :foreground blue-alt))
+		      (org-document-info-keyword (:height 1.5 :inherit 'font-lock-keyword-face))
+
+		      (org-scheduled-previously (:foreground blue-alt-dimmed))
+
+		      (org-latex-and-related (:foreground standout))
 		      
-		      (org-quote (:inherit 'org-block :slant 'italic))
-		      (org-verse (:inherit 'org-block :slant 'italic))
+		      (org-agenda-current-time (:foreground standout :background bg-main))
+		      (org-agenda-dimmed-todo-face (:foreground purple-alt-dimmed))
+		      (org-agenda-structure (:weight 'bold :box (:color pastel-violet) :inherit 'font-lock-constant-face))
+		      (org-agenda-date (:height 1.1 :foreground blue-dimmed))
+		      (org-agenda-date-today (:height 1.4 :weight 'bold :foreground blue-alt))
+		      (org-agenda-date-weekend (:weight 'normal :foreground purple))
+		      (org-agenda-done (:height 1.1 :inherit 'org-done))
+
+		      (org-scheduled (:foreground pink))
+		      (org-scheduled-today (:foreground pastel-pink))
+
+		      (org-time-grid (:foreground purple-alt-dimmed))
+
+		      (org-ellipses (:foreground purple))
+
+		      ;;font-latex
+		      (font-latex-math-face (:inherit 'bold :foreground pink-alt))
 
 		      ;;Rainbow delimiters
 		      (rainbow-delimiters-depth-1-face (:foreground fg-white :inherit 'rainbow-delimiters-base-face))
@@ -178,66 +207,51 @@
 		      (rainbow-delimiters-base-error-face (:foreground bg-black :inherit 'rainbow-delimiters-base-face))
 		      (rainbow-delimiters-base-face (:weight 'bold))
 
-		      ;;Outlines/Headings
-		      (outline-1 (:foreground level1))
-		      (outline-2 (:foreground level2))
-		      (outline-3 (:foreground level3))
-		      (outline-4 (:foreground level4))
-		      (outline-5 (:foreground level5))
-		      (outline-6 (:foreground level6))
-		      (outline-7 (:foreground level7))
-		      (outline-8 (:foreground level8))
-
-		      ;;latex faces
-		      (font-latex-math-face (:foreground standout :weight 'semi-bold))
-		      (font-latex-sectioning-2-face (:height 2.0 :foreground blue2-light))
-		      
 		      ;;Company
-		      (company-tooltip (:foreground mygray1 :background bg-black :box (:color pastel-violet)))
-		      (company-tooltip-selection (:foreground mygray2-dark :background pink-light-alt))
-		      (company-tooltip-search (:foreground mygray1))
-		      (company-tooltip-search-selection (:foreground mygray2-dark :background pink-light-alt))
-		      (company-echo-common (:foreground mygray1))
-		      (company-tooltip-common (:foreground mygray1))
-		      (company-tooltip-annotation (:foreground mygray1))
+		      (company-tooltip (:foreground gray :background bg-black :box (:color pastel-violet)))
+		      (company-tooltip-selection (:foreground gray-alt-dark :background pink-alt))
+		      (company-tooltip-search (:foreground gray))
+		      (company-tooltip-search-selection (:foreground gray-alt-dark :background pink-alt))
+		      (company-echo-common (:foreground gray))
+		      (company-tooltip-common (:foreground gray))
+		      (company-tooltip-annotation (:foreground gray))
 		      (company-scrollbar-fg nil)
 		      (company-scrollbar-bg (:background bg-main))
-		      (company-preview (:foreground mygray2-dark :background pink-light-alt))
+		      (company-preview (:foreground gray-alt-dark :background pink-alt))
 		      (company-preview-common (:inherit 'company-preview))
-		      (company-preview-search (:background bg-main :foreground mygray1))
+		      (company-preview-search (:background bg-main :foreground gray))
 		      (company-echo nil)
 
 		      ;;Avy and Ace-Window
-		      (avy-background-face (:foreground fg-dark))
-		      (avy-lead-face (:foreground bg-black :background background-standout1))
-		      (avy-lead-face-0 (:foreground bg-black :background background-standout2))
-		      (avy-lead-face-1 (:foreground bg-black :background pink-light))
-		      
+		      (avy-lead-face (:foreground gray-alt-dark :background background-standout1))
+		      (avy-lead-face-0 (:foreground gray-alt-dark :background background-standout2))
+		  		      
 		      (aw-leading-char-face (:height 2.0 :foreground warning))
+		      (aw-background-face (:foreground purple-dimmed))
 
-		      ;;Modeline-general.
-		      (mode-line (:foreground fg-white :background purple-dark))
-		      (mode-line-inactive (:foreground mygray1-dark :background mode-line-no-1))
+		      ;;Mode-line-general.
+		      (mode-line (:foreground fg-white :background purple))
+		      (mode-line-inactive (:foreground gray-dark :background purple-dimmed))
 		      
 		      ;;Nano modeline.
-		      (nano-modeline-inactive-status-** (:inherit 'mode-line-inactive  :background pastel-blue :foreground bg-black))
-		      (nano-modeline-inactive-status-RW (:inherit 'mode-line-inactive  :background mode-line-no-2))
-		      (nano-modeline-inactive-status-RO (:inherit 'mode-line-inactive  :background mode-line-no-2))
+		      (nano-modeline-inactive-status-** (:inherit 'mode-line-inactive  :background pastel-blue :foreground gray-alt-dark))
+		      (nano-modeline-inactive-status-RW (:inherit 'mode-line-inactive  :background purple-alt-dimmed :foreground gray-alt-dark))
+		      (nano-modeline-inactive-status-RO (:inherit 'mode-line-inactive  :background purple-alt-dimmed :foreground gray-alt-dark))
 		      (nano-modeline-inactive-secondary (:inherit 'mode-line-inactive))
 		      (nano-modeline-inactive-primary (:inherit 'mode-line-inactive))
 		      (nano-modeline-inactive-name (:inherit 'mode-line-inactive))
 		      (nano-modeline-inactive (:inherit 'mode-line-inactive))
 		      
-		      (nano-modeline-active-status-** (:inherit 'mode-line  :background pastel-aqua :foreground bg-black))
-		      (nano-modeline-active-status-RW (:inherit 'mode-line :background pastel-violet))
-		      (nano-modeline-active-status-RO (:inherit 'mode-line :background pastel-violet))
+		      (nano-modeline-active-status-** (:inherit 'mode-line  :background pastel-aqua :foreground gray-alt-dark))
+		      (nano-modeline-active-status-RW (:inherit 'mode-line :background purple-alt :foreground gray-alt-dark))
+		      (nano-modeline-active-status-RO (:inherit 'mode-line :background purple-alt :foreground gray-alt-dark))
 		      (nano-modeline-active-secondary (:inherit ('mode-line 'italic)))
 		      (nano-modeline-active-primary (:inherit ('mode-line 'italic)))
 		      (nano-modeline-active-name (:inherit ('mode-line 'bold)))
 		      (nano-modeline-active (:inherit 'mode-line))
 
 		      ;;Ivy
-		      (ivy-current-match (:extend t :foreground mygray2-dark :background pink-light-alt))
+		      (ivy-current-match (:extend t :foreground gray-alt-dark :background pink-alt))
 		      (ivy-minibuffer-match-highlight (:inherit 'highlight))
 		      (ivy-minibuffer-match-face-1 (:weight 'bold :inherit 'ivy-current-match))
 		      (ivy-minibuffer-match-face-2 (:weight 'bold :foreground standout))
@@ -251,27 +265,68 @@
 		      (swiper-match-face-4 (:weight 'bold :foreground standout))
 
 		      ;;mu4e
-		      (mu4e-unread-face (:weight 'bold :foreground pastel-blue))
-		      (mu4e-trashed-face (:strike-through t :foreground mygray2))
-		      (mu4e-draft-face (:foreground mygray1-dark))
-		      (mu4e-flagged-face (:weight 'bold :foreground standout))
-		      (mu4e-replied-face (:weight 'normal :slant 'normal :foreground purple-dark))
-		      (mu4e-forwarded-face (:weight 'normal :slant 'normal :foreground pastel-violet))
-
-		      (mu4e-header-face (:inherit 'default))
-		      (mu4e-related-face (:slant 'italic :inherit 'default))
+		      (mu4e-unread-face (:weight 'bold :foreground pastel-pink))
+		      (mu4e-trashed-face (:strike-through t :foreground purple-alt-dimmed))
+		      (mu4e-draft-face (:foreground pink-alt-dimmed))
+		      (mu4e-flagged-face (:weight 'bold :foreground purple-alt))
+		      (mu4e-replied-face (:weight 'normal :slant 'normal :foreground blue-alt))
+		      (mu4e-forwarded-face (:weight 'normal :slant 'normal :foreground blue-alt-dimmed))
+		      
+		      (mu4e-header-face (:foreground pastel-violet))
 		      (mu4e-header-title-face (:foreground pastel-lilac))
 		      (mu4e-header-highlight-face (:weight 'bold :underline t :extend t :inherit 'highlight))
-		      (mu4e-header-key-face (:weight 'bold :foreground aqua-light))
-		      (mu4e-header-value-face (:foreground blue2-light))
-		      (mu4e-special-header-value-face (:foreground pink-light))
-
+		      (mu4e-header-marks-face (:inherit 'font-lock-preprocessor-face))
+		      (mu4e-header-key-face (:weight 'bold :foreground blue))
+		      (mu4e-header-value-face (:foreground blue-alt))
+		      (mu4e-special-header-value-face (:foreground blue-alt))
+		      
+		      (mu4e-related-face (:slant 'italic :inherit 'default))
+		      		      
 		      (mu4e-link-face (:inherit 'link))
-		      (mu4e-highlight-face (:inherit 'highlight))
-		      (mu4e-title-face (:weight 'bold :foreground pink-light))
-		      (mu4e-warning-face (:weight 'bold :slant 'normal :inherit 'font-lock-warning-face))
-		      
-		      
+		      (mu4e-contact-face (:inherit 'font-lock-variable-name-face))
+		      (mu4e-highlight-face (:foreground pink-alt))
+		      (mu4e-title-face (:weight 'bold :foreground purple-alt))
+		     
+		      (mu4e-url-number-face (:weight 'bold :inherit 'link))
+
+		      ;;mu4e-column-faces
+		      (mu4e-column-faces-thread-subject (:foreground purple-alt))
+		      (mu4e-column-faces-to-from (:foreground blue))
+		      (mu4e-column-faces-date (:foreground pastel-lilac))
+		      (mu4e-column-faces-flags (:foreground warning))
+		      (mu4e-column-faces-tags (:foreground standout))
+		      (mu4e-column-faces-mailing-list (:foreground pastel-violet))
+		      (mu4e-column-faces-maildir (:foreground purple))
+		      (mu4e-column-faces-message-id (:foreground blue-alt ))
+		      (mu4e-column-faces-attachments (:foreground standout))
+		      (mu4e-column-faces-signature (:foreground pastel-blue :weight 'bold))
+		      (mu4e-column-faces-thead-subject (:foreground pastel-pink :weight 'bold))
+		      (mu4e-column-faces-user-agent (:foreground blue-alt))
+
+		      ;;gnus
+		      (gnus-header-from (:foreground blue-alt))
+		      (gnus-header-subject (:foreground blue-alt))
+		      (gnus-header-name (:foreground purple-alt))
+		      (gnus-header-content (:slant 'italic :foreground blue))
+
+		      ;;message
+		      (message-separator (:weight 'bold :foreground comment))
+		      (message-header-to (:weight 'bold :foreground blue))
+		      (message-header-cc (:weight 'bold :foreground blue-alt))
+		      (message-header-subject (:foreground pink-alt))
+		      (message-header-other (:foreground blue-alt))
+		      (message-header-name (:foreground purple-alt))
+
+		      ;;elfeed
+		      (elfeed-search-date-face (:foreground pastel-lilac))
+		      (elfeed-search-title-face (:foreground pastel-violet :weight 'normal))
+		      (elfeed-search-unread-title-face (:weight 'bold :foreground pastel-pink))
+		      (elfeed-search-feed-face (:foreground blue))
+		      (elfeed-search-tag-face (:foreground pastel-blue))
+		      (elfeed-search-last-update-face nil)
+		      (elfeed-search-unread-count-face (:inherit 'default))
+		      (elfeed-search-filter-face (:foreground purple))
+
 		      )
 		     ;; Forms after the face specifications are evaluated.
 		     ;; (palette vars can be used, read below for details.)
@@ -286,5 +341,5 @@
 (provide-theme 'TransSide)
 
 ;; Local Variables:
-;; eval: (rainbow-mode)
+;; eval: (progn (rainbow-mode) (autothemer-colorize))
 ;; End:
