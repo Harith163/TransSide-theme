@@ -18,7 +18,7 @@
 
 		      ;;Pinks & Blues
 		      (pink "#e86f8a")
-		      (blue "#11bcFF")
+		      (blue "#11acFF")
 
 		      (pink-alt "#ff81b8")
 		      (blue-alt "#53b9ff")
@@ -37,9 +37,9 @@
 		      (purple-alt-dimmed "#493b80")
 
 		      ;;Alternate Palate
-		      (pastel-blue "#5ec8fa")
+		      (pastel-blue "#AEC6FF")
 		      (pastel-aqua "#92ddea")
-		      (pastel-pink "#ffa5d8")
+		      (pastel-pink "#eea5d8")
 		      (pastel-lilac "#be9ddf")
 		      (pastel-violet "#9579d1")
 
@@ -68,6 +68,7 @@
 		      (comment "#a88fac")
 		      (warning "#ff0069")
 		      (docstr "#dfaEf8")
+		      (highlight "#0f1f3f")
 
 		      (background-standout1 "#37FF00")
 		      (background-standout2 "#006AFF")
@@ -98,8 +99,8 @@
 		      (fringe (:background bg-main))
 
 		      (cursor (:background pink-alt :foreground gray-alt-dark))
-		      (highlight (:foreground gray-alt-dark :background pink-alt))
-		      (region (:foreground gray-alt-dark :background pink-alt))
+		      (highlight (:weight 'bold :foreground pink-alt :background highlight))
+		      (region (:weight 'bold :foreground pink-alt :background highlight))
 
 		      (link (:foreground pastel-pink :underline t))
 
@@ -140,7 +141,7 @@
 		      (org-priority (:inherit 'font-lock-keyword-face))
 
 		      (org-date (:underline nil :foreground pastel-blue))
-		      (org-date-selected (:inverse-video t :foreground pink))
+		      (org-date-selected (:inverse-video t :foreground pink-alt))
 		      
 		      (org-level-1 (:inherit 'outline-1 :weight 'bold :height 1.3 :slant 'italic))
 		      (org-level-2 (:inherit 'outline-2 :weight 'normal :height 1.1 :slant 'italic))
@@ -182,7 +183,7 @@
 		      (org-agenda-date-weekend (:weight 'normal :foreground purple))
 		      (org-agenda-done (:height 1.1 :inherit 'org-done))
 
-		      (org-scheduled (:foreground pink))
+		      (org-scheduled (:foreground pink-alt))
 		      (org-scheduled-today (:foreground pastel-pink))
 
 		      (org-time-grid (:foreground purple-alt-dimmed))
@@ -223,16 +224,16 @@
 		      (rainbow-delimiters-base-face (:weight 'bold))
 
 		      ;;Company
-		      (company-tooltip (:foreground gray :background bg-black :box (:color pastel-violet)))
-		      (company-tooltip-selection (:foreground gray-alt-dark :background pink-alt))
-		      (company-tooltip-search (:foreground gray))
-		      (company-tooltip-search-selection (:foreground gray-alt-dark :background pink-alt))
-		      (company-echo-common (:foreground gray))
-		      (company-tooltip-common (:foreground gray))
-		      (company-tooltip-annotation (:foreground gray))
+		      (company-tooltip (:foreground fg-text :background bg-black :box (:color pastel-violet)))
+		      (company-tooltip-selection (:inherit 'highlight))
+		      (company-tooltip-search (:foreground fg-text))
+		      (company-tooltip-search-selection (:inherit 'highlight))
+		      (company-echo-common (:foreground fg-text))
+		      (company-tooltip-common (:inherit 'highlight))
+		      (company-tooltip-annotation (:foreground fg-text))
 		      (company-scrollbar-fg nil)
 		      (company-scrollbar-bg (:background bg-main))
-		      (company-preview (:foreground gray-alt-dark :background pink-alt))
+		      (company-preview (:inhert 'highlight))
 		      (company-preview-common (:inherit 'company-preview))
 		      (company-preview-search (:background bg-main :foreground gray))
 		      (company-echo nil)
@@ -266,7 +267,7 @@
 		      (nano-modeline-active (:inherit 'mode-line))
 
 		      ;;Ivy
-		      (ivy-current-match (:extend t :foreground gray-alt-dark :background pink-alt))
+		      (ivy-current-match (:extend t :foreground pink-alt :background bg-black))
 		      (ivy-minibuffer-match-highlight (:inherit 'highlight))
 		      (ivy-minibuffer-match-face-1 (:weight 'bold :inherit 'ivy-current-match))
 		      (ivy-minibuffer-match-face-2 (:weight 'bold :foreground standout))
@@ -289,7 +290,7 @@
 		      
 		      (mu4e-header-face (:foreground pastel-violet))
 		      (mu4e-header-title-face (:foreground pastel-lilac))
-		      (mu4e-header-highlight-face (:weight 'bold :underline t :extend t :inherit 'highlight))
+		      (mu4e-header-highlight-face (:extend t :inherit 'highlight))
 		      (mu4e-header-marks-face (:inherit 'font-lock-preprocessor-face))
 		      (mu4e-header-key-face (:weight 'bold :foreground blue))
 		      (mu4e-header-value-face (:foreground blue-alt))
@@ -335,7 +336,7 @@
 		      ;;elfeed
 		      (elfeed-search-date-face (:foreground pastel-lilac))
 		      (elfeed-search-title-face (:foreground pastel-violet :weight 'normal))
-		      (elfeed-search-unread-title-face (:weight 'bold :foreground pastel-pink))
+		      (elfeed-search-unread-title-face (:weight 'normal :foreground pastel-pink))
 		      (elfeed-search-feed-face (:foreground blue))
 		      (elfeed-search-tag-face (:foreground pastel-blue))
 		      (elfeed-search-last-update-face nil)
