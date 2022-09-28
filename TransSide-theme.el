@@ -60,7 +60,7 @@
 		      ;; (level7 "#6B53AE")
 		      ;; (level8 "#2C93fE")
 
-		      (level1 "#bb99ff")
+		      (level1 "#cc99ff")
 		      (level2 "#7777ff")
 		      (level3 "#bb88ff")
 		      (level4 "#8877ff")
