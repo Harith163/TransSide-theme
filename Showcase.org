@@ -40,7 +40,7 @@
 
       \section{This is a section.}
 
-      This is an inline equation $\Lambda = Pain$. \footnote{Here is a footnote.}
+      This is an inline equation $\Lambda = \int_{-\infty}^{\pi}\frac{\partial}{\partial x} f(x)$. \footnote{Here is a footnote.}
 
       \end{document}
     #+end_src
@@ -73,7 +73,9 @@
      
 ***** MORE LEVELS
 ****** EEEEEEE
-******* ☛TODO NEON
-SCHEDULED: <2022-09-09 Fri>
-******* ✔DONE OOH 
-******* ❌CANCELED AAHH
+******* ☛TODO This is a todo face
+DEADLINE: <2022-09-29 Thu> SCHEDULED: <2022-09-09 Fri>
+- State "⚑WAITING"   from "⚑WAITING"   [2022-09-29 Thu 10:11]
+- State "⚑WAITING"   from "☛TODO"      [2022-09-29 Thu 10:11]
+******* ✔DONE This is a done face
+******* ❌CANCELED Waiting and Cancelled have the same face as done in my config but you can change this in yours.

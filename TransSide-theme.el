@@ -7,48 +7,46 @@
 (autothemer-deftheme TransSide "Custom theme inspired by the colors of the Trans Flag."
  
 		     ;; Specify the color classes used by the theme
-		     ((((class color) (min-colors #xFFFFFF)))
+		     ((((class color) (min-colors #xFFFFFF))
+		       ((class color) (min-colors #xFF)))
 		      
 		      ;; Specify the color palette for each of the classes above.
 		      ;;basic bg/fg colors
-		      (bg-main "#00000f")
-		      (bg-black "#0f0f2f")
-		      (fg-white "#FFFFFF")
-		      (fg-text "#ffe1ff")
+		      (bg-main "#00000f" "#000")
+		      (bg-black "#0f0f2f" "#112")
+		      (fg-white "#FFFFFF" "#FFF")
+		      (fg-text "#ffe1ff" "#FeF")
 
 		      ;;Pinks & Blues
-		      (pink "#e86f8a")
-		      (blue "#11acFF")
+		      (pink "#e86f8a" "#e68")
+		      (blue "#11acFF" "#1aF")
 
-		      (pink-alt "#ff81b8")
-		      (blue-alt "#53b9ff")
+		      (pink-alt "#ff81b8" "#F8B")
+		      (blue-alt "#53b9ff" "#5bF")
 
-		      (pink-dimmed "#c83e6a")
-		      (blue-dimmed "#118cdc")
-
-		      (pink-alt-dimmed "#df6f9f")
-		      (blue-alt-dimmed "#73a9dd")
+		      (pink-alt-dimmed "#df6f9f" "#D69")
+		      (blue-alt-dimmed "#73a9dd" "#7ad")
 
 		      ;;Purples & Violets
-		      (purple "#6E58BB")
-		      (purple-alt "#b693ff")
+		      (purple "#6E58BB" "#65b")
+		      (purple-alt "#b693ff" "#b9f")
 
-		      (purple-dimmed "#341c62")
-		      (purple-alt-dimmed "#493b80")
+		      (purple-dimmed "#341c62" "#316")
+		      (purple-alt-dimmed "#493b80" "#438")
 
 		      ;;Alternate Palate
-		      (pastel-blue "#AEC6FF")
-		      (pastel-aqua "#92ddea")
-		      (pastel-pink "#eea5d8")
-		      (pastel-lilac "#be9ddf")
-		      (pastel-violet "#9579d1")
+		      (pastel-blue "#AEC6FF" "#ACF")
+		      (pastel-aqua "#92ddea" "#9DE")
+		      (pastel-pink "#eea5d8" "#EAD")
+		      (pastel-lilac "#be9ddf" "#B9D")
+		      (pastel-violet "#9579d1" "#97d")
 
 
 		      ;;Alt grays and dark's
-		      (gray "#f8f8f8")
-		      (gray-dark "#d0d0d0")
-		      (gray-alt "#3a3a3a")
-		      (gray-alt-dark "#141414")
+		      (gray "#f8f8f8" "#FFF")
+		      (gray-dark "#d0d0d0" "#DDD")
+		      (gray-alt "#3a3a3a" "#333")
+		      (gray-alt-dark "#141414" "#111")
 
 		      ;;Level Colors
 		      ;; (level1 "#FF619D")
@@ -60,27 +58,27 @@
 		      ;; (level7 "#6B53AE")
 		      ;; (level8 "#2C93fE")
 
-		      (level1 "#cc99ff")
-		      (level2 "#7777ff")
-		      (level3 "#bb88ff")
-		      (level4 "#8877ff")
-		      (level5 "#bb77ff")
-		      (level6 "#9977ff")
-		      (level7 "#bb66ff")
-		      (level8 "#aa66ff")
+		      (level1 "#cc99ff" "#c9f")
+		      (level2 "#7799ff" "#79f")
+		      (level3 "#bb88ff" "#b8f")
+		      (level4 "#8899ff" "#89f")
+		      (level5 "#bb77ff" "#b7f")
+		      (level6 "#9999ff" "#99f")
+		      (level7 "#bb66ff" "#b6f")
+		      (level8 "#aa99ff" "#a9f")
 
- 		      (standout "#00FF94")
+ 		      (standout "#00FF94" "#0F9")
 		      ;; (standout "#00AAA6")
 				      
 		      ;;Warning, comment, and other miscellanious colors
-		      (builtin "#Bf7fBf")
-		      (comment "#a88fac")
-		      (warning "#ff0069")
-		      (docstr "#dfaEf8")
-		      (highlight "#0f1f3f")
+		      (builtin "#Bf7fBf" "#B7B")
+		      (comment "#a88fac" "#a8a")
+		      (warning "#ff0069" "#F06")
+		      (docstr "#dfaEf8" "#daf")
+		      (highlight "#0f1f3f" "#013")
 
-		      (background-standout1 "#37FF00")
-		      (background-standout2 "#006AFF")
+		      (background-standout1 "#37FF00" "#3F0")
+		      (background-standout2 "#006AFF" "#06F")
 		      
 		      )
 		     
@@ -187,7 +185,7 @@
 		      (org-agenda-current-time (:foreground standout :background bg-main))
 		      (org-agenda-dimmed-todo-face (:foreground purple-alt-dimmed))
 		      (org-agenda-structure (:weight 'bold :box (:color pastel-violet) :inherit 'font-lock-constant-face))
-		      (org-agenda-date (:height 1.1 :foreground blue-dimmed))
+		      (org-agenda-date (:height 1.1 :foreground blue-alt-dimmed))
 		      (org-agenda-date-today (:height 1.4 :weight 'bold :foreground blue-alt))
 		      (org-agenda-date-weekend (:weight 'normal :foreground purple))
 		      (org-agenda-done (:height 1.1 :inherit 'org-done))
