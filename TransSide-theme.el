@@ -75,7 +75,7 @@
 		      (comment "#a88fac" "#a8a")
 		      (warning "#ff0069" "#F06")
 		      (docstr "#dfaEf8" "#daf")
-		      (highlight "#0f1f3f" "#013")
+		      (highlight "#0f1f3f" "#124")
 
 		      (background-standout1 "#37FF00" "#3F0")
 		      (background-standout2 "#006AFF" "#06F")
@@ -150,8 +150,8 @@
 		      (org-date (:underline nil :foreground pastel-blue))
 		      (org-date-selected (:inverse-video t :foreground pink-alt))
 		      
-		      (org-level-1 (:inherit 'outline-1 :weight 'bold :height 1.3 :slant 'italic))
-		      (org-level-2 (:inherit 'outline-2 :weight 'normal :height 1.1 :slant 'italic))
+		      (org-level-1 (:inherit 'outline-1 :weight 'bold :height 1.3))
+		      (org-level-2 (:inherit 'outline-2 :weight 'normal :height 1.1))
 		      (org-level-3 (:inherit 'outline-3 :weight 'normal))
 		      (org-level-4 (:inherit 'outline-4 :weight 'normal))
 		      (org-level-5 (:inherit 'outline-5 :weight 'normal))
