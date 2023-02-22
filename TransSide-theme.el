@@ -18,7 +18,7 @@
 		      (fg-text "#ffe1ff" "#FeF")
 
 		      ;;Pinks & Blues
-		      (pink "#e86f8a" "#e68")
+		      (pink "#e86fba" "#e6b")
 		      (blue "#11acFF" "#1aF")
 
 		      (pink-alt "#ff81b8" "#F8B")
