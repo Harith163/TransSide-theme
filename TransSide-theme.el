@@ -75,7 +75,7 @@
 		      (comment "#a88fac" "#a8a")
 		      (warning "#ff0069" "#F06")
 		      (docstr "#dfaEf8" "#daf")
-		      (highlight "#0f1f3f" "#124")
+		      (highlight "#3f1f3f" "#313")
 
 		      (background-standout1 "#37FF00" "#3F0")
 		      (background-standout2 "#006AFF" "#06F")
@@ -106,8 +106,8 @@
 		      (fringe (:background bg-main))
 
 		      (cursor (:background pink-alt :foreground gray-alt-dark))
-		      (highlight (:weight 'bold :foreground blue-alt :background highlight))
-		      (region (:weight 'bold :foreground blue-alt :background highlight))
+		      (highlight (:weight 'bold :foreground pink-alt :background highlight))
+		      (region (:weight 'bold :foreground pink-alt :background highlight))
 
 		      (link (:foreground pastel-pink :underline t))
 
