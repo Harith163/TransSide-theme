@@ -24,6 +24,12 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+;;; Commentary:
+
+;; SEE README
+
+;;; Code:
+
 (require 'autothemer)
 
 (unless (>= emacs-major-version 24)

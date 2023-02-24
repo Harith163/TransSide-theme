@@ -33,7 +33,7 @@ When I started out this theme, in its first iteration, it was a cheap knock-off 
 4) Support. My goal is to eventually support as many packages as possible, outside of Emacs even. In the context of Emacs, my goal is to support as many packages as possible.
 
 * Installation
-The package isn't on ELPA or MELPA (yet). For the time being, one can install with straight using.
+The package isn't on =ELPA= or =MELPA= (yet). For the time being, one can install with straight using.
 
 #+begin_src emacs-lisp
        (use-package TransSide-theme
@@ -42,7 +42,7 @@ The package isn't on ELPA or MELPA (yet). For the time being, one can install wi
          (load-theme 'TransSide t))
 #+end_src
 
-If you're on Emacs 29 and up, I believe /package-vc-install/ should also work similarly, though I have not tested that out.
+If you're on Emacs 29 and up, I believe =package-vc-install= should also work similarly, though I have not tested that out.
 
 You are also of-course always welcome to git clone and manually load the theme.
 
