@@ -1,3 +1,31 @@
+;;; TransSide-theme.el --- High contrast theme based off of the trans flag colors -*- lexical-binding: t -*-
+;;
+;; Authors: Kaushik Skye Harith
+;;
+;; Copyright 2022-2023 Kaushik S Harith
+;;
+;; Maintainer: Kaushik Harith <kaushik.harith@gmail.com>
+;;
+;; URL: https://github.com/Harith163/TransSide-theme
+;; Version: 0.9.0
+;; Package-Requires: ((autothemer "0.2.14") (emacs "24.1"))
+;;
+;;; License:
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
 (require 'autothemer)
 
 (unless (>= emacs-major-version 24)
