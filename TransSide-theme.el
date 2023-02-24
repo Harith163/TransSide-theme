@@ -106,8 +106,8 @@
 		      (fringe (:background bg-main))
 
 		      (cursor (:background pink-alt :foreground gray-alt-dark))
-		      (highlight (:weight 'bold :foreground pink-alt :background highlight))
-		      (region (:weight 'bold :foreground pink-alt :background highlight))
+		      (highlight (:weight 'bold :foreground blue-alt :background highlight))
+		      (region (:weight 'bold :foreground blue-alt :background highlight))
 
 		      (link (:foreground pastel-pink :underline t))
 
@@ -349,6 +349,8 @@
 		      (elfeed-search-last-update-face nil)
 		      (elfeed-search-unread-count-face (:inherit 'default))
 		      (elfeed-search-filter-face (:foreground purple))
+
+              
 
 		      )
 		     ;; Forms after the face specifications are evaluated.
