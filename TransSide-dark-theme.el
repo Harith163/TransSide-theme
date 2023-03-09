@@ -1,4 +1,4 @@
-;;; TransSide-theme.el --- High contrast theme based off of the trans flag colors -*- lexical-binding: t -*-
+;;; TransSide-dark-theme.el --- High contrast theme based off of the trans flag colors -*- lexical-binding: t -*-
 ;;
 ;; Authors: Kaushik Skye Harith
 ;;
