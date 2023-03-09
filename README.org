@@ -36,10 +36,10 @@ When I started out this theme, in its first iteration, it was a cheap knock-off 
 The package isn't on =ELPA= or =MELPA= (yet). For the time being, one can install with straight using.
 
 #+begin_src emacs-lisp
-       (use-package TransSide-theme
-         :straight (TransSide-theme :type git :host github :repo "Harith163/TransSide-theme")
+       (use-package TransSide
+         :straight (TransSide :type git :host github :repo "Harith163/TransSide-theme")
          :config
-         (load-theme 'TransSide t))
+         (load-theme 'TransSide-dark t))
 #+end_src
 
 If you're on Emacs 29 and up, I believe =package-vc-install= should also work similarly, though I have not tested that out.
