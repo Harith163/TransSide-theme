@@ -30,93 +30,22 @@
 
 ;;; Code:
 
-(require 'autothemer)
-
 (unless (>= emacs-major-version 24)
   (error "Requires Emacs 24 or later"))
 
+;;;###autoload
+(and load-file-name
+     (boundp 'custom-theme-load-path)
+     (add-to-list 'custom-theme-load-path
+                  (file-name-as-directory
+                   (file-name-directory load-file-name))))
 
-(autothemer-deftheme TransSide "Custom theme inspired by the colors of the Trans Flag."
- 
-		     ;; Specify the color classes used by the theme
-		     ((((class color) (min-colors #xFFFFFF))
-		       ((class color) (min-colors #xFF)))
-		      
-		      ;; Specify the color palette for each of the classes above.
-		      ;;basic bg/fg colors
-		      (bg-main "#00000f" "#000")
-		      (bg-black "#0f0f2f" "#112")
-		      (fg-white "#FFFFFF" "#FFF")
-		      (fg-text "#ffe1ff" "#FeF")
-
-		      ;;Pinks & Blues
-		      (pink "#e86fba" "#e6b")
-		      (blue "#11acFF" "#1aF")
-
-		      (pink-alt "#ff81b8" "#F8B")
-		      (blue-alt "#53b9ff" "#5bF")
-
-		      (pink-alt-dimmed "#df6f9f" "#D69")
-		      (blue-alt-dimmed "#73a9dd" "#7ad")
-
-		      ;;Purples & Violets
-		      (purple "#6E58BB" "#65b")
-		      (purple-alt "#b693ff" "#b9f")
-
-		      (purple-dimmed "#341c62" "#316")
-		      (purple-alt-dimmed "#493b80" "#438")
-
-		      ;;Alternate Palate
-		      (pastel-blue "#AEC6FF" "#ACF")
-		      (pastel-aqua "#92ddea" "#9DE")
-		      (pastel-pink "#eea5d8" "#EAD")
-		      (pastel-lilac "#be9ddf" "#B9D")
-		      (pastel-violet "#9579d1" "#97d")
-
-
-		      ;;Alt grays and dark's
-		      (gray "#f8f8f8" "#FFF")
-		      (gray-dark "#d0d0d0" "#DDD")
-		      (gray-alt "#3a3a3a" "#333")
-		      (gray-alt-dark "#141414" "#111")
-
-		      ;;Level Colors
-		      ;; (level1 "#FF619D")
-		      ;; (level2 "#00ccFF")
-		      ;; (level3 "#8368D5")
-		      ;; (level4 "#35a7f5")
-		      ;; (level5 "#FF91BA")
-		      ;; (level6 "#21CFFC")
-		      ;; (level7 "#6B53AE")
-		      ;; (level8 "#2C93fE")
-
-		      (level1 "#cc99ff" "#c9f")
-		      (level2 "#7799ff" "#79f")
-		      (level3 "#bb88ff" "#b8f")
-		      (level4 "#8899ff" "#89f")
-		      (level5 "#bb77ff" "#b7f")
-		      (level6 "#9999ff" "#99f")
-		      (level7 "#bb66ff" "#b6f")
-		      (level8 "#aa99ff" "#a9f")
-
- 		      (standout "#00FF94" "#0F9")
-		      ;; (standout "#00AAA6")
-				      
-		      ;;Warning, comment, and other miscellanious colors
-		      (builtin "#Bf7fBf" "#B7B")
-		      (comment "#a88fac" "#a8a")
-		      (warning "#ff0069" "#F06")
-		      (docstr "#dfaEf8" "#daf")
-		      (highlight "#3f1f3f" "#313")
-
-		      (background-standout1 "#37FF00" "#3F0")
-		      (background-standout2 "#006AFF" "#06F")
-		      
-		      )
-		     
-		     ;; specifications for Emacs faces.
-		     
-		     (;; Default faces. Most commonly seen, used and inherited.
+(defmacro TransSide-deftheme (name description palette &rest body)
+  `(autothemer-deftheme
+    ,name
+    ,description
+    ,palette
+    		     (;; Default faces. Most commonly seen, used and inherited.
 		      (default (:foreground fg-text :background bg-main))
 
 		      (font-lock-builtin-face (:foreground builtin))
@@ -127,7 +56,7 @@
 
 		      (font-lock-string-face (:foreground pink))
 		      (font-lock-type-face (:foreground purple-alt))
-     		      (font-lock-function-name-face (:foreground blue))
+     		  (font-lock-function-name-face (:foreground blue))
 		      (font-lock-variable-name-face (:foreground blue-alt))
 		      (font-lock-constant-face (:foreground blue-alt))
 		      
@@ -172,7 +101,7 @@
 
 		      ;;Org-mode stuff
 		      (org-todo (:weight 'bold :box nil :foreground purple-alt))
-		      (org-done (:weight 'bold :box nil :foreground pastel-violet))
+		      (org-done (:weight 'bold :box nil :foreground purple))
 
 		      (org-headline-todo (:foreground pink-alt))
 		      (org-headline-done (:foreground blue-alt))
@@ -228,6 +157,24 @@
 		      (org-time-grid (:foreground purple-alt-dimmed))
 
 		      (org-ellipsis (:foreground purple))
+
+              ;;org-modern
+              (org-modern-symbol nil)
+              (org-modern-label (:width 'regular :height 1.0 :weight 'regular :underline nil :box (:color bg-main)))
+              (org-modern-block-name (:height 0.9 :weight 'light))
+              (org-modern-tag (:foreground fg-white :inherit ('secondary-selection 'org-modern-label)))
+              (org-modern-internal-target (:inherit 'org-modern-done))
+              (org-modern-radio-target (:inherit 'org-modern-done))
+              (org-modern-done (:inverse-video t :weight 'semibold :background gray-dark :height 1.0 :inherit ('org-modern-label 'org-done)))
+              (org-modern-todo (:weight 'semibold :inverse-video t :height 1.0 :inherit ('org-todo 'org-modern-label)))
+              (org-modern-priority (:weight 'semibold :inverse-video t :inherit ('org-priority 'org-modern-label)))
+              (org-modern-statistics (:inherit 'org-modern-todo))
+              (org-modern-date-active (:inverse-video t :weight 'semibold :inherit ('org-modern-label 'org-date)))
+              (org-modern-time-active (:inverse-video t :foreground blue-alt-dimmed :weight 'semibold :inherit ('org-modern-label 'org-date)))
+              (org-modern-date-inactive (:inverse-video t :inherit ('org-modern-label 'org-date)))
+              (org-modern-time-inactive (:inverse-video t :foreground blue-alt-dimmed :inherit ('org-modern-label 'org-date)))
+              (org-modern-horizontal-rule (:strike-through gray-alt :inherit 'org-hide))
+
 
 		      ;;font-latex
 		      (font-latex-math-face (:inherit 'bold :foreground pink-alt))
@@ -381,22 +328,7 @@
 		      (elfeed-search-last-update-face nil)
 		      (elfeed-search-unread-count-face (:inherit 'default))
 		      (elfeed-search-filter-face (:foreground purple))
+              )
+                 ,@body))
 
-              
-
-		      )
-		     ;; Forms after the face specifications are evaluated.
-		     ;; (palette vars can be used, read below for details.)
-		     )
-
-(and load-file-name
-     (boundp 'custom-theme-load-path)
-     (add-to-list 'custom-theme-load-path
-                  (file-name-as-directory
-                   (file-name-directory load-file-name))))
-
-(provide-theme 'TransSide)
-
-;; Local Variables:
-;; eval: (progn (rainbow-mode) (autothemer-colorize))
-;; End:
+(provide 'TransSide)
