@@ -1,4 +1,4 @@
-;;; TransSide-dark-theme.el --- High contrast theme based off of the trans flag colors -*- lexical-binding: t -*-
+;;; TransSide-light-theme.el --- High contrast theme based off of the trans flag colors -*- lexical-binding: t -*-
 ;;
 ;; Authors: Kaushik Skye Harith
 ;;
@@ -32,7 +32,7 @@
 
 (require 'TransSide)
 
-(TransSide-deftheme TransSide-dark "Custom theme inspired by the colors of the Trans Flag."
+(TransSide-deftheme TransSide-light "Custom theme inspired by the colors of the Trans Flag."
  
 		     ;; Specify the color classes used by the theme
 		     ((((class color) (min-colors #xFFFFFF))
@@ -40,10 +40,10 @@
 		      
 		      ;; Specify the color palette for each of the classes above.
 		      ;;basic bg/fg colors
-		      (bg-main "#00000f" "#000")
-		      (bg-black "#0f0f2f" "#112")
-		      (fg-white "#FFFFFF" "#FFF")
-		      (fg-text "#ffe1ff" "#FeF")
+		      (bg-main "#f1ebff" "#FeF")
+		      (bg-black "#efcfff" "#ecf")
+		      (fg-white "#0f0f2f" "#112")
+		      (fg-text "#00000f" "#001")
 
 		      ;;Pinks & Blues
 		      (pink "#e86fba" "#e6b")
@@ -108,7 +108,8 @@
 		      (background-standout1 "#37FF00" "#3F0")
 		      (background-standout2 "#006AFF" "#06F")
 
-              (org-src-blk "#00001f" "002")
+              (org-src-blk "#dfcfff" "#dcf")
+		      
 		      )
 		 	 )
 
@@ -118,7 +119,7 @@
                   (file-name-as-directory
                    (file-name-directory load-file-name))))
 
-(provide-theme 'TransSide-dark)
+(provide-theme 'TransSide-light)
 
 ;; Local Variables:
 ;; eval: (progn (rainbow-mode))

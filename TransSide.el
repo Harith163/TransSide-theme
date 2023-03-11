@@ -121,7 +121,7 @@
 	 (org-level-7 (:inherit 'outline-7 :weight 'normal))
 	 (org-level-8 (:inherit 'outline-8 :weight 'normal))
      
-	 (org-block (:background "#00001f"))
+	 (org-block (:background org-src-blk))
 	 (org-block-begin-line (:inherit 'font-lock-comment-face :background bg-black :box (:color pastel-violet)))
 	 (org-block-end-line (:inherit 'org-block-begin-line))
      
