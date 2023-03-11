@@ -41,40 +41,40 @@
 		      ;; Specify the color palette for each of the classes above.
 		      ;;basic bg/fg colors
 		      (bg-main "#f1ebff" "#FeF")
-		      (bg-black "#d0d0f0" "#ecf")
-		      (fg-white "#000000" "#112")
-		      (fg-text "#1f001f" "#001")
+		      (bg-black "#d0d0f0" "#ddf")
+		      (fg-white "#000000" "#000")
+		      (fg-text "#1f001f" "#202")
 
 		      ;;Pinks & Blues
-		      (pink "#911862" "#e6b")
-		      (blue "#009cf0" "#1aF")
+		      (pink "#911862" "#916")
+		      (blue "#009cf0" "#09f")
 
-		      (pink-alt "#800037" "#F8B")
-		      (blue-alt "#0068ad" "#5bF")
+		      (pink-alt "#800037" "#803")
+		      (blue-alt "#0068ad" "#06a")
 
-		      (pink-alt-dimmed "#922052" "#D69")
-		      (blue-alt-dimmed "#22588c" "#7ad")
+		      (pink-alt-dimmed "#922052" "#925")
+		      (blue-alt-dimmed "#22588c" "#258")
 
 		      ;;Purples & Violets
-		      (purple "#5944a7" "#65b")
-		      (purple-alt "#22006b" "#b9f")
+		      (purple "#816ec4" "#86c")
+		      (purple-alt "#504099" "#549")
 
-		      (purple-dimmed "#b59ce3" "#316")
-		      (purple-alt-dimmed "#8c7ec4" "#438")
+		      (purple-dimmed "#b59ce3" "#b9e")
+		      (purple-alt-dimmed "#8c7ec4" "#87c")
 
 		      ;;Alternate Palate
-		      (pastel-blue "#001852" "#ACF")
-		      (pastel-aqua "#145e6b" "#9DE")
-		      (pastel-pink "#5a1144" "#EAD")
-		      (pastel-lilac "#401f60" "#B9D")
-		      (pastel-violet "#492e85" "#97d")
+		      (pastel-blue "#001852" "#015")
+		      (pastel-aqua "#142e6b" "#126")
+		      (pastel-pink "#5a1144" "#514")
+		      (pastel-lilac "#401f60" "#416")
+		      (pastel-violet "#492e85" "#428")
 
 
 		      ;;Alt grays and dark's
-		      (gray "#080808" "#FFF")
-		      (gray-dark "#2e2e2e" "#DDD")
-		      (gray-alt "#c4c4c4  " "#333")
-		      (gray-alt-dark "#ebebeb" "#111")
+		      (gray "#080808" "#000")
+		      (gray-dark "#2e2e2e" "#222")
+		      (gray-alt "#c4c4c4  " "#ccc")
+		      (gray-alt-dark "#ebebeb" "#eee")
 
 		      ;;Level Colors
 		      ;; (level1 "#FF619D")
@@ -86,23 +86,23 @@
 		      ;; (level7 "#6B53AE")
 		      ;; (level8 "#2C93fE")
 
-		      (level1 "#330066" "#c9f")
-		      (level2 "#00228a" "#79f")
-		      (level3 "#330075" "#b8f")
-		      (level4 "#00127f" "#89f")
-		      (level5 "#3b007f" "#b7f")
-		      (level6 "#000066" "#99f")
-		      (level7 "#540099" "#b6f")
-		      (level8 "#110066" "#a9f")
+		      (level1 "#330066" "#306")
+		      (level2 "#00228a" "#028")
+		      (level3 "#330075" "#307")
+		      (level4 "#00127f" "#017")
+		      (level5 "#3b007f" "#307")
+		      (level6 "#000066" "#006")
+		      (level7 "#540099" "#509")
+		      (level8 "#110066" "#106")
 
  		      (standout "#00FF94" "#0F9")
 		      ;; (standout "#00AAA6")
 				      
 		      ;;Warning, comment, and other miscellanious colors
-		      (builtin "#814181" "#B7B")
-		      (comment "#6c526f" "#a8a")
+		      (builtin "#814181" "#848")
+		      (comment "#6c526f" "#656")
 		      (warning "#ff0069" "#F06")
-		      (docstr "#370750" "#daf")
+		      (docstr "#370750" "#305")
 		      (highlight "#efcfef" "#ece")
 
 		      (background-standout1 "#37FF00" "#3F0")
