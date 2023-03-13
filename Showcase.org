@@ -3,8 +3,8 @@
 #+startup: overview inlineimages
 #+date: \today
 #+title: A File to Showcase a theme
-#+author: Kaushik Srinivasan Harith
-#+email: kaushik.harith@gmail.com
+#+author: Kaushik Skye Harith
+#+email: skye.harith@gmail.com
 #+language: en
 #+select_tags: export
 #+exclude_tags: noexport

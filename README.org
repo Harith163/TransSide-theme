@@ -9,11 +9,8 @@ Themes are dime a dozen in Emacs. Most of them are quite excellent, but they nev
 Though I am probably in the minority here, I was searching for a significantly more contrast-y look to my editor. I started on this project before I realized people like Prot did what I was trying to do but infinitely better. Prot's ef-themes and modus-vivendi in particular have much better visual rhythm than anything I will ever be able to accomplish. Having said that, I have grown accustomed to my theme, and it is tuned to my preferences. I only put it up here on github in the off-chance there is someone else like me.
 
 * Images
-[[images/1.png]]
-[[images/2.png]]
-[[images/3.png]]
-[[images/4.png]]
-[[images/5.png]]
+[[images/dark.png]]
+[[images/light.png]]
 
 * Guiding Philosophy
 When I started out this theme, in its first iteration, it was a cheap knock-off of gruvbox with some colors changed here and there. But as i've worked on it, I've accrued some opinions.
@@ -42,7 +39,12 @@ The package isn't on =ELPA= or =MELPA= (yet). For the time being, one can instal
          (load-theme 'TransSide-dark t))
 #+end_src
 
-If you're on Emacs 29 and up, I believe =package-vc-install= should also work similarly, though I have not tested that out.
+If you're on Emacs 29 and up, I believe =package-vc-install= should also work similarly.
+
+#+begin_src emacs-lisp
+  (package-vc-install "https://www.github.com/Harith163/TransSide-theme")
+  (load-theme 'TransSide-light t)
+#+end_src
 
 You are also of-course always welcome to git clone and manually load the theme.
 
