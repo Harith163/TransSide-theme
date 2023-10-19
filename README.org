@@ -49,7 +49,5 @@ If you're on Emacs 29 and up, I believe =package-vc-install= should also work si
 You are also of-course always welcome to git clone and manually load the theme.
 
 * More work to be done
-** ☛TODO Add support for popular packages like helm, vertico, consult, embark, eglot, lsp-mode etc
-** ☛TODO Add support for Magit and git-diff type uses
-** ☛TODO Improve consistency of the colors
-** ☛TODO Source help to improve the 'visual rhythm'
+
+** TODO Create Inheritance schema from basic defined faces.
