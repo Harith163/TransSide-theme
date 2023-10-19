@@ -235,24 +235,7 @@
 	 ;;Mode-line-general.
 	 (mode-line (:foreground fg-white :background purple))
 	 (mode-line-inactive (:foreground gray-dark :background purple-dimmed))
-	 
-	 ;;Nano modeline.
-	 (nano-modeline-inactive-status-** (:inherit 'mode-line-inactive  :background pastel-blue :foreground gray-alt-dark))
-	 (nano-modeline-inactive-status-RW (:inherit 'mode-line-inactive  :background purple-alt-dimmed :foreground gray-alt-dark))
-	 (nano-modeline-inactive-status-RO (:inherit 'mode-line-inactive  :background purple-alt-dimmed :foreground gray-alt-dark))
-	 (nano-modeline-inactive-secondary (:inherit 'mode-line-inactive))
-	 (nano-modeline-inactive-primary (:inherit 'mode-line-inactive))
-	 (nano-modeline-inactive-name (:inherit 'mode-line-inactive))
-	 (nano-modeline-inactive (:inherit 'mode-line-inactive))
-	 
-	 (nano-modeline-active-status-** (:inherit 'mode-line  :background pastel-aqua :foreground gray-alt-dark))
-	 (nano-modeline-active-status-RW (:inherit 'mode-line :background purple-alt :foreground gray-alt-dark))
-	 (nano-modeline-active-status-RO (:inherit 'mode-line :background purple-alt :foreground gray-alt-dark))
-	 (nano-modeline-active-secondary (:inherit ('mode-line 'italic)))
-	 (nano-modeline-active-primary (:inherit ('mode-line 'italic)))
-	 (nano-modeline-active-name (:inherit ('mode-line 'bold)))
-	 (nano-modeline-active (:inherit 'mode-line))
-     
+	      
 	 ;;Ivy
 	 (ivy-current-match (:extend t :foreground pink-alt :background bg-black))
 	 (ivy-minibuffer-match-highlight (:inherit 'highlight))
