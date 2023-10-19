@@ -103,6 +103,8 @@
 	 ;;Org-mode stuff
 	 (org-todo (:weight 'bold :box nil :foreground purple-alt))
 	 (org-done (:weight 'bold :box nil :foreground purple))
+
+     (org-tag (:weight 'bold :foreground fg-white :background bg-black))
      
 	 (org-headline-todo (:foreground pink-alt))
 	 (org-headline-done (:foreground blue-alt))
@@ -158,24 +160,7 @@
 	 (org-time-grid (:foreground purple-alt-dimmed))
      
 	 (org-ellipsis (:foreground purple))
-     
-     ;;org-modern
-     (org-modern-symbol nil)
-     (org-modern-label (:width 'regular :height 1.0 :weight 'regular :underline nil :box (:color bg-main)))
-     (org-modern-block-name (:height 0.9 :weight 'light))
-     (org-modern-tag (:foreground fg-white :inherit ('secondary-selection 'org-modern-label)))
-     (org-modern-internal-target (:inherit 'org-modern-done))
-     (org-modern-radio-target (:inherit 'org-modern-done))
-     (org-modern-done (:inverse-video t :weight 'semibold :background gray-dark :height 1.0 :inherit ('org-modern-label 'org-done)))
-     (org-modern-todo (:weight 'semibold :inverse-video t :height 1.0 :inherit ('org-todo 'org-modern-label)))
-     (org-modern-priority (:weight 'semibold :inverse-video t :inherit ('org-priority 'org-modern-label)))
-     (org-modern-statistics (:inherit 'org-modern-todo))
-     (org-modern-date-active (:inverse-video t :weight 'semibold :inherit ('org-modern-label 'org-date)))
-     (org-modern-time-active (:inverse-video t :foreground blue-alt-dimmed :weight 'semibold :inherit ('org-modern-label 'org-date)))
-     (org-modern-date-inactive (:inverse-video t :inherit ('org-modern-label 'org-date)))
-     (org-modern-time-inactive (:inverse-video t :foreground blue-alt-dimmed :inherit ('org-modern-label 'org-date)))
-     (org-modern-horizontal-rule (:strike-through gray-alt :inherit 'org-hide))
-     
+          
      
 	 ;;font-latex
 	 (font-latex-math-face (:inherit 'bold :foreground pink-alt))
@@ -210,9 +195,15 @@
 	 (rainbow-delimiters-base-error-face (:foreground bg-black :inherit 'rainbow-delimiters-base-face))
 	 (rainbow-delimiters-base-face (:weight 'bold))
           
-	 ;;Mode-line-general.
+	 ;;Mode-line
 	 (mode-line (:foreground fg-white :background purple))
+     (mode-line-active (:inherit 'mode-line))
 	 (mode-line-inactive (:foreground gray-dark :background purple-dimmed))
+     (mode-line-highlight (:box (:line-width 2 :color comment :style 'released-button)))
+     (mode-line-buffer-id (:weight 'bold))
+     (mode-line-emphasis (:weight 'bold))
+
+
      )
     ,@body))
 
