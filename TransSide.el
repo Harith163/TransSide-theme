@@ -160,7 +160,6 @@
 	 (org-time-grid (:foreground purple-alt-dimmed))
      
 	 (org-ellipsis (:foreground purple))
-          
      
 	 ;;font-latex
 	 (font-latex-math-face (:inherit 'bold :foreground pink-alt))

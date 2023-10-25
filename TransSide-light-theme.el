@@ -76,16 +76,6 @@
 		      (gray-alt "#c4c4c4  " "#ccc")
 		      (gray-alt-dark "#ebebeb" "#eee")
 
-		      ;;Level Colors
-		      ;; (level1 "#FF619D")
-		      ;; (level2 "#00ccFF")
-		      ;; (level3 "#8368D5")
-		      ;; (level4 "#35a7f5")
-		      ;; (level5 "#FF91BA")
-		      ;; (level6 "#21CFFC")
-		      ;; (level7 "#6B53AE")
-		      ;; (level8 "#2C93fE")
-
 		      (level1 "#330066" "#306")
 		      (level2 "#00228a" "#028")
 		      (level3 "#330075" "#307")
@@ -96,7 +86,6 @@
 		      (level8 "#110066" "#106")
 
  		      (standout "#00FF94" "#0F9")
-		      ;; (standout "#00AAA6")
 				      
 		      ;;Warning, comment, and other miscellanious colors
 		      (builtin "#814181" "#848")
@@ -104,9 +93,6 @@
 		      (warning "#ff0069" "#F06")
 		      (docstr "#370750" "#305")
 		      (highlight "#efcfef" "#ece")
-
-		      (background-standout1 "#37FF00" "#3F0")
-		      (background-standout2 "#006AFF" "#06F")
 
               (org-src-blk "#dfcfff" "#dcf")
 		      
