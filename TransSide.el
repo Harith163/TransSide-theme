@@ -99,7 +99,7 @@
 	 (outline-6 (:foreground level6))
 	 (outline-7 (:foreground level7))
 	 (outline-8 (:foreground level8))
-     
+
 	 ;;Org-mode stuff
 	 (org-todo (:weight 'bold :box nil :foreground purple-alt))
 	 (org-done (:weight 'bold :box nil :foreground purple))
@@ -160,7 +160,16 @@
 	 (org-time-grid (:foreground purple-alt-dimmed))
      
 	 (org-ellipsis (:foreground purple))
-     
+
+     ;;Org-modern
+     (org-modern-tag (:foreground fg-white :background bg-black))
+     (org-modern-todo (:weight 'bold :box nil :background purple-alt :foreground bg-main))
+     (org-modern-done (:weight 'bold :box nil :background pastel-aqua :foreground bg-main))
+     (org-modern-date-inactive (:background pastel-blue :foreground bg-black))
+     (org-modern-date-active (:background blue :foreground gray-alt-dark))
+     (org-modern-time-inactive (:background blue-alt :foreground bg-black))
+     (org-modern-time-active (:background blue-alt-dimmed :foreground gray-alt-dark))     
+
 	 ;;font-latex
 	 (font-latex-math-face (:inherit 'bold :foreground pink-alt))
 	 (font-latex-sectioning-5-face (:weight 'bold :foreground blue-alt :inherit 'variable-pitch))
@@ -201,8 +210,7 @@
      (mode-line-highlight (:box (:line-width 2 :color comment :style 'released-button)))
      (mode-line-buffer-id (:weight 'bold))
      (mode-line-emphasis (:weight 'bold))
-
-
+     
      )
     ,@body))
 
