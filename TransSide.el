@@ -78,7 +78,7 @@
 	 (warning (:weight 'bold :foreground warning))
 	 
 	 ;;line number mode
-	 (linum (:height 0.85 :inherit '(shadow default)))
+	 (linum (:inherit '(shadow default)))
 	 (linum-relative-current-face (:weight 'bold :foreground blue :background bg-main :inherit 'linum))
 	 (line-number (:inherit ('shadow 'default)))
 	 (line-number-current-line (:inherit 'linum-relative-current-face))
