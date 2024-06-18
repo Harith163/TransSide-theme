@@ -34,7 +34,7 @@ The package isn't on =ELPA= or =MELPA= (yet). For the time being, one can instal
 
 #+begin_src emacs-lisp
        (use-package TransSide
-         :straight (TransSide :type git :host github :repo "Harith163/TransSide-theme")
+         :straight (TransSide :type git :host github :repo "skye-repos/TransSide-theme")
          :config
          (load-theme 'TransSide-dark t))
 #+end_src
@@ -42,7 +42,7 @@ The package isn't on =ELPA= or =MELPA= (yet). For the time being, one can instal
 If you're on Emacs 29 and up, I believe =package-vc-install= should also work similarly.
 
 #+begin_src emacs-lisp
-  (package-vc-install "https://www.github.com/Harith163/TransSide-theme")
+  (package-vc-install "https://www.github.com/skye-repos/TransSide-theme")
   (load-theme 'TransSide-light t)
 #+end_src
 
